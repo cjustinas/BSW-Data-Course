@@ -1,34 +1,10 @@
 ---
 title: Getting started
-description: In this chapter you will learn how 
+description: In this chapter you will learn how to kick off your data analysis project.
+
 
 ---
-## <<<New Exercise>>>
-
-```yaml
-type: MultipleChoiceExercise
-key: d4540636bd
-lang: python
-xp: 50
-skills: 2
-```
-
-
-`@instructions`
-
-`@hint`
-
-`@pre_exercise_code`
-```{python}
-
-```
-
-`@sct`
-```{python}
-
-```
----
-## Import the required libraries
+## Import libraries
 
 ```yaml
 type: NormalExercise
@@ -37,11 +13,17 @@ xp: 100
 skills: 2
 key: 286ddf980c
 ```
+Imagine libraries as tools for building a house - you would not make your own hammer, nails and bricks, but rather buy these items in a shop. Similarly, libraries equip you with useful code that can be easily reused. For free! 
 
+Two of the most useful libraries are:
+
+`pandas - for data manipulation and analysis`
+
+`numpy - for working with data arrays.`
 
 `@instructions`
 
-`@hint`
+Import `pandas` library and name it `pd` for ease of use. The code to import the `numpy` library has already been written for you as an example.
 
 `@pre_exercise_code`
 ```
@@ -58,7 +40,6 @@ import numpy as np
 import ____ as ____
 
 ```
-
 `@solution`
 ```
 #Import numpy library
@@ -75,8 +56,6 @@ import pandas as pd
 ```{python}
 
 ```
-
-
 ---
 ## Import the data
 
@@ -89,7 +68,12 @@ skills: 2
 ```
 
 
+
 `@instructions`
+
+1) Use pd.read_excel()
+
+2) S
 
 `@hint`
 
@@ -101,12 +85,13 @@ import pandas as pd
 
 `@sample_code`
 ```
-df 
+df = pd.____(____)
 
 ```
 
 `@solution`
-```{python}
+```
+df = pd.read_csv()
 
 ```
 
