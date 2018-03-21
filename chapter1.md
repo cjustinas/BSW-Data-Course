@@ -34,22 +34,18 @@ The code to import the `numpy` library has already been written for you as an ex
 `@sample_code`
 ```
 #Import numpy library
-
 import numpy as np
 
 #Import pandas library
-
 import ____ as ____
 ```
 
 `@solution`
 ```
 #Import numpy library
-
 import numpy as np
 
 #Import pandas library
-
 import pandas as pd
 ```
 
@@ -100,7 +96,8 @@ df = pd.read_csv()
 ```
 
 `@sct`
-```{python}
+```
+test_object("df")
 
 ```
 
@@ -132,11 +129,9 @@ import pandas as pd
 `@sample_code`
 ```
 #Check the first 5 rows of the DataFrame
-
 df.head()
 
 #Check the last 10 rows of the DataFrame
-
 df.____(____)
 ```
 
