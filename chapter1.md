@@ -11,7 +11,7 @@ xp: 100
 skills: 2
 key: 286ddf980c
 ```
-Imagine libraries as tools for building a house - you would not make your own hammer, nails and bricks, but rather buy these items in a shop. Similarly, libraries equip you with useful code that can be easily reused. For free! 
+Imagine `libraries` as tools for building a house - you would not make your own hammer, nails and bricks, but rather buy these items in a shop. Similarly, libraries equip you with useful code that can be easily reused. For free! 
 
 Two of the most useful libraries are:
 
@@ -64,9 +64,9 @@ lang: python
 xp: 100
 skills: 2
 ```
-Now that you have imported `pandas` library, we can focus on acquiring the data. Pandas can take take in a variety of difrent data types like , but for this particular project we will import an Excel file. 
+Now that you have imported `pandas` library, we can focus on acquiring the data. This means pointing pandas to a data source, so it can transform it into a `Data Frame`. In very broad terms a Data Frame is simply a data structure with rows and columns or observations and variables (you can think of it as a spreadsheet).
 
-`Data Frame`
+Pandas can import data from a variety of sources that include text files, databases, APIs and so on. For this particular project we will import an Excel file. 
 
 `@instructions`
 
