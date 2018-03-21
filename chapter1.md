@@ -11,7 +11,9 @@ xp: 100
 skills: 2
 key: 286ddf980c
 ```
-Imagine `libraries` as tools for building a house - you would not make your own hammer, nails and bricks, but rather buy these items in a shop. Similarly, libraries equip you with useful code that can be easily reused. For free! 
+`Libraries` are collections of code that have been wirtten by other developers and packaged for anyone to use.
+
+Imagine libraries as tools for building a house - you would not make your own hammer, nails and bricks, but rather buy these items in a shop. Similarly, libraries equip you with useful code that can be easily reused. For free! 
 
 Two of the most useful libraries are:
 
@@ -21,7 +23,9 @@ Two of the most useful libraries are:
 
 `@instructions`
 
-Import `pandas` library and name it `pd` for ease of use. The code to import the `numpy` library has already been written for you as an example.
+Import `pandas` library and name it `pd` for ease of use. 
+
+The code to import the `numpy` library has already been written for you as an example.
 
 `@pre_exercise_code`
 ```
@@ -162,13 +166,15 @@ lang: python
 xp: 100
 skills: 2
 ```
-You have made good progress so far! Not only have you learned about the importance of labraries, but also imported data required for the upcoming analysis and cheked if the import has been succesful. We also learned about variables.
+You have made good progress so far! Not only have you learned about the importance of labraries, but also imported data required for the upcoming analysis and cheked if the import has been succesful. 
+
+We also learned about variables. But more on that in the upcoming exercises!
+
+For now, review the glorious code you have writen.
 
 `@instructions`
 
-
-
-`@hint`
+Click `Submit Answer` once you are ready to proceed!
 
 `@pre_exercise_code`
 ```{python}
@@ -176,7 +182,12 @@ You have made good progress so far! Not only have you learned about the importan
 ```
 
 `@sample_code`
-```{python}
+```
+import pandas as pd
+
+df = pd.read_csv('AAA.xlsx')
+
+df.head()
 
 ```
 
