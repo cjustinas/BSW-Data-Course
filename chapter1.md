@@ -1,10 +1,8 @@
 ---
 title: Getting started
-description: In this chapter you will learn how to kick off your data analysis project.
-
-
+description: In this chapter you will learn how to kick off your data analysis project. This includes 
 ---
-## Import libraries
+## Import the required libraries
 
 ```yaml
 type: NormalExercise
@@ -66,14 +64,14 @@ lang: python
 xp: 100
 skills: 2
 ```
-
-
+Now that you have prepared 
+`Data Frame `
 
 `@instructions`
 
-1) Use pd.read_excel()
+1) Use `pd.read_excel()` to tell Python you want to import an Excel file.
 
-2) S
+2) Make sure you include the filename `AAA.xlsx`
 
 `@hint`
 
@@ -85,13 +83,91 @@ import pandas as pd
 
 `@sample_code`
 ```
-df = pd.____(____)
+____ = pd.____(____)
 
 ```
 
 `@solution`
 ```
 df = pd.read_csv()
+
+```
+
+`@sct`
+```{python}
+
+```
+
+---
+## Check your data
+
+```yaml
+type: NormalExercise
+key: 713861b8dd
+lang: python
+xp: 100
+skills: 2
+```
+
+
+`@instructions`
+
+`@hint`
+
+`@pre_exercise_code`
+```{python}
+
+```
+
+`@sample_code`
+```
+#Check the first 5 rows of the DataFrame
+
+df.head()
+
+#Check the last 10 rows of the DataFrame
+
+df.____(____)
+```
+
+`@solution`
+```{python}
+
+```
+
+`@sct`
+```{python}
+
+```
+
+---
+## Bringing it all together
+
+```yaml
+type: NormalExercise
+key: 689f678c19
+lang: python
+xp: 100
+skills: 2
+```
+
+
+`@instructions`
+
+`@hint`
+
+`@pre_exercise_code`
+```{python}
+
+```
+
+`@sample_code`
+```{python}
+
+```
+
+`@solution`
+```{python}
 
 ```
 
