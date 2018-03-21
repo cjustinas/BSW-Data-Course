@@ -1,6 +1,6 @@
 ---
 title: Getting started
-description: In this chapter you will learn how to kick off your data analysis project. This includes 
+description: In this chapter you will learn how to kick off your data analysis project. This includes equiping your working environment with powerful libraries, importing the data you want to analyse and checking if the import has been succesful.
 ---
 ## Import the required libraries
 
@@ -140,8 +140,26 @@ df.____(____)
 
 ```
 
+
 ---
-## Bringing it all together
+## <<<New Exercise>>>
+
+```yaml
+type: PureMultipleChoiceExercise
+key: 6a95f02550
+xp: 50
+skills: 2
+```
+
+
+`@possible_answers`
+
+`@hint`
+
+`@feedback`
+
+---
+## Bring it all together
 
 ```yaml
 type: NormalExercise
@@ -150,9 +168,11 @@ lang: python
 xp: 100
 skills: 2
 ```
-
+You have made good progress so far! Not only have you learned about the importance of labraries, but also imported data required for the upcoming analysis and cheked if the import has been succesful. We also learned about variables.
 
 `@instructions`
+
+
 
 `@hint`
 
