@@ -166,9 +166,9 @@ lang: python
 xp: 100
 skills: 2
 ```
-You have made good progress so far! Not only have you learned about the importance of labraries, but also imported data required for the upcoming analysis and cheked if the import has been succesful. 
+You have made good progress so far. Not only have you learned about the importance of labraries, but also imported data required for the upcoming analysis and cheked if the import has been succesful. At this rate you will become an expierenced data analyst in no time!
 
-We also learned about variables. But more on that in the upcoming exercises!
+We also briefly touched upon variables by defining `df`. But more on that in the upcoming exercises...
 
 For now, review the glorious code you have writen.
 

@@ -1,8 +1,8 @@
 ---
-title       : Exploring the data
-description : Before any serious analysis can begin, it is important to understand 
+title       : Explore the data
+description : Before any serious analysis can begin, it is important to understand your data. We do this by perfomring Exploratory Data Anlysis (EDA). A few of EDA methods will be covered in this chapter.
 ---
-## <<<New Exercise>>>
+## Let's get some info! 
 
 ```yaml
 type: NormalExercise
@@ -11,25 +11,27 @@ lang: python
 xp: 100
 skills: 2
 ```
-
+We will begin by getting some very braod infromation about the Data Frame df. 
 
 `@instructions`
 
-`@hint`
+Use the `info()` method on the df variable
 
 `@pre_exercise_code`
-```{python}
+```
+import pandas as pd 
 
 ```
 
 `@sample_code`
-```{python}
+```
+df.____()
 
 ```
 
 `@solution`
-```{python}
-
+```
+df.info()
 ```
 
 `@sct`
