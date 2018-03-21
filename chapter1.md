@@ -64,7 +64,7 @@ lang: python
 xp: 100
 skills: 2
 ```
-Now that you have imported the `pandas` and `numpy` libraries, we can focus on acquiring the data. , but for this particular project we will import an Excel file. 
+Now that you have imported `pandas` library, we can focus on acquiring the data. Pandas can take take in a variety of difrent data types like , but for this particular project we will import an Excel file. 
 
 `Data Frame`
 
@@ -113,15 +113,13 @@ skills: 2
 ```
 Congratulations! You have just imported your data...
 
-...or have you? 
-
-
+...or have you? To view and check your data we will use the `head()` and `tail()` methods.
 
 `@instructions`
 
-Use `tail` method and specify the parameter of `10` on the df object.
+Use `tail()` method on the df object and specify the parameter of `10` inside the brackets to view the last 10 rows of the Data Frame.
 
-`@hint`
+The `head()` method has been writen for you as an exmaple (it returns 5 rows of data if you do not specify a number in the brakcets).
 
 `@pre_exercise_code`
 ```
