@@ -40,8 +40,8 @@ import numpy as np
 #Import pandas library
 
 import ____ as ____
-
 ```
+
 `@solution`
 ```
 #Import numpy library
@@ -51,12 +51,11 @@ import numpy as np
 #Import pandas library
 
 import pandas as pd
-
 ```
 
 `@sct`
-```{python}
-
+```
+test_import("pandas", same_as = True)
 ```
 ---
 ## Import the data
