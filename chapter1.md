@@ -1,6 +1,6 @@
 ---
 title: Getting started
-description: In this chapter you will learn how to kick off your data analysis project. This includes equiping your working environment with powerful libraries, importing the data you want to analyse and checking if the import has been succesful.
+description: In this chapter you will learn how to kick off your data analysis project. This includes equiping your working environment with powerful libraries, importing the data you want to analyse and checking if the data import has been succesful.
 ---
 ## Import the required libraries
 
@@ -64,14 +64,17 @@ lang: python
 xp: 100
 skills: 2
 ```
-Now that you have prepared 
-`Data Frame `
+Now that you have imported the `pandas` and `numpy` libraries, we can focus on acquiring the data. , but for this particular project we will import an Excel file. 
+
+`Data Frame`
 
 `@instructions`
 
 1) Use `pd.read_excel()` to tell Python you want to import an Excel file.
 
 2) Make sure you include the filename `AAA.xlsx`
+
+3) Assign the code above to a variable `df` (abreviation of Data Frame)
 
 `@hint`
 
@@ -108,17 +111,23 @@ lang: python
 xp: 100
 skills: 2
 ```
+Congratulations! You have just imported your data...
+
+...or have you? 
+
 
 
 `@instructions`
 
+Use `tail` method and specify the parameter of `10` on the df object.
+
 `@hint`
 
 `@pre_exercise_code`
-```{python}
+```
+import pandas as pd 
 
 ```
-
 `@sample_code`
 ```
 #Check the first 5 rows of the DataFrame
@@ -132,32 +141,19 @@ df.____(____)
 
 `@solution`
 ```{python}
+#Check the first 5 rows of the DataFrame
 
+df.head()
+
+#Check the last 10 rows of the DataFrame
+
+df.tail(10)
 ```
 
 `@sct`
 ```{python}
 
 ```
-
-
----
-## <<<New Exercise>>>
-
-```yaml
-type: PureMultipleChoiceExercise
-key: 6a95f02550
-xp: 50
-skills: 2
-```
-
-
-`@possible_answers`
-
-`@hint`
-
-`@feedback`
-
 ---
 ## Bring it all together
 
