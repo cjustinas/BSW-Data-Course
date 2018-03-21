@@ -19,7 +19,7 @@ Two of the most useful libraries are:
 
 `pandas - for data manipulation and analysis`
 
-`numpy - for working with data arrays.`
+`numpy - for working with data arrays`
 
 `@instructions`
 
