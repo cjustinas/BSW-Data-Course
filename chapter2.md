@@ -15,7 +15,7 @@ We will begin by getting some very braod infromation about the Data Frame df.
 
 `@instructions`
 
-Use the `info()` method on the df variable
+Use the `info()` method on the `df`
 
 `@pre_exercise_code`
 ```
@@ -32,6 +32,42 @@ df.____()
 `@solution`
 ```
 df.info()
+```
+
+`@sct`
+```{python}
+
+```
+
+---
+## <<<New Exercise>>>
+
+```yaml
+type: NormalExercise
+key: ff0ef50ee7
+lang: python
+xp: 100
+skills: 2
+```
+
+
+`@instructions`
+
+`@hint`
+
+`@pre_exercise_code`
+```{python}
+
+```
+
+`@sample_code`
+```{python}
+
+```
+
+`@solution`
+```{python}
+
 ```
 
 `@sct`
