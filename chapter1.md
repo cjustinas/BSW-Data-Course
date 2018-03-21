@@ -17,9 +17,9 @@ Imagine libraries as tools for building a house - you would not make your own ha
 
 Two of the most useful libraries are:
 
-`pandas - for data manipulation and analysis`
+`pandas - for data manipulation and analysis.`
 
-`numpy - for working with data arrays`
+`numpy - for working with data arrays.`
 
 `@instructions`
 
@@ -42,10 +42,6 @@ import ____ as ____
 
 `@solution`
 ```
-#Import numpy library
-import numpy as np
-
-#Import pandas library
 import pandas as pd
 ```
 
@@ -71,7 +67,7 @@ Pandas can import data from a variety of sources that include text files, databa
 
 1) Use `pd.read_excel()` to tell Python you want to import an Excel file.
 
-2) Make sure you include the filename `AAA.xlsx`
+2) Make sure you include the filename `'AAA.xlsx'`
 
 3) Assign the code above to a variable `df` (abreviation of Data Frame)
 
