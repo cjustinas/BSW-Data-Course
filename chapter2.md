@@ -1,5 +1,5 @@
 ---
-title       : Exploring your data
+title       : Exploring the data
 description : Before any serious analysis can begin, it is important to understand 
 ---
 ## <<<New Exercise>>>
