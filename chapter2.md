@@ -40,11 +40,58 @@ df.info()
 ```
 
 ---
-## <<<New Exercise>>>
+## Describe the data
 
 ```yaml
 type: NormalExercise
 key: ff0ef50ee7
+lang: python
+xp: 100
+skills: 2
+```
+The `info()` method has given you some limited insight into the dataset. You discovered 
+
+What about some more statistical description of the data? For this purpose we will use the `describe()`method.
+
+`@instructions`
+
+Use the `describe()` method on `df`
+
+`@hint`
+
+`@pre_exercise_code`
+```{python}
+
+```
+
+`@sample_code`
+```{python}
+
+```
+
+`@solution`
+```{python}
+
+```
+
+`@sct`
+```{python}
+
+```
+
+
+---
+## Explore a single column
+
+Wow, you just received a lot of useful information with a single `describe()` method! 
+
+Hold on... on second thought something is not right here. If the maximum age of the person in the dataset is 75, this means that they had to be born in the year 1985 - well before the first colonies were established, so their home planet cannot be Mars. 
+
+We need to find a way to determine the maximum age for 
+
+```yaml
+type: NormalExercise
+key: 7875e652d6
 lang: python
 xp: 100
 skills: 2
@@ -62,6 +109,82 @@ skills: 2
 
 `@sample_code`
 ```{python}
+
+```
+
+`@solution`
+```{python}
+
+```
+
+`@sct`
+```{python}
+
+```
+
+---
+## <<<New Exercise>>>
+
+```yaml
+type: NormalExercise
+key: 0a8799887e
+lang: python
+xp: 100
+skills: 2
+```
+
+
+`@instructions`
+
+`@hint`
+
+`@pre_exercise_code`
+```{python}
+
+```
+
+`@sample_code`
+```{python}
+
+```
+
+`@solution`
+```{python}
+
+```
+
+`@sct`
+```{python}
+
+```
+---
+## Bring it all together
+
+```yaml
+type: NormalExercise
+key: 1f72e72c18
+lang: python
+xp: 100
+skills: 2
+```
+
+Well done! You have 
+
+`@instructions`
+
+`@hint`
+
+`@pre_exercise_code`
+```
+import pandas as pd
+
+```
+
+`@sample_code`
+```
+df.info()
+
+df.describe()
 
 ```
 
