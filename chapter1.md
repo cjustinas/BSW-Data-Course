@@ -67,7 +67,7 @@ Pandas can import data from a variety of sources that include text files, databa
 
 1) Use `pd.read_excel()` to tell Python you want to import an Excel file.
 
-2) Make sure you include the filename `'AAA.xlsx'`
+2) Make sure you include the filename `'mars_data.xlsx'`
 
 3) Assign the code above to a variable `df` (abreviation of Data Frame)
 
@@ -88,7 +88,7 @@ ____ = pd.____(____)
 
 `@solution`
 ```
-df = pd.read_csv()
+df = pd.read_excel('https://assets.datacamp.com/production/repositories/2588/datasets/e99d6698448d2ce8e57cb8cd504dfed305c65799/mars_data.xlsx')
 
 ```
 
@@ -121,6 +121,7 @@ The `head()` method has been writen for you as an exmaple (it returns 5 rows of 
 `@pre_exercise_code`
 ```
 import pandas as pd 
+df = pd.read_excel('https://assets.datacamp.com/production/repositories/2588/datasets/e99d6698448d2ce8e57cb8cd504dfed305c65799/mars_data.xlsx')
 
 ```
 `@sample_code`
