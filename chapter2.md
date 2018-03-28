@@ -56,7 +56,9 @@ The `info()` method has given you some high-level insight into the dataset as a 
 
 What about some statistical description of the individual columns? For this purpose we will use the `describe()`method.
 
-This time you will also have to print out the output. Take some time to interpret it. 
+This time you will use a variable to store the code. A variable is like a container that converts lenghty code into a short character string. 
+
+Make sure you print the variable and take some time to interpret the output.
 
 `@instructions`
 
@@ -100,10 +102,11 @@ success_msg("Wow, you just received a lot of useful information with a single `d
 
 ---
 ## Explore a single column
+The `description` method has provided yo with the maximum age value in the datased, so maybe this has helped to answer your manager's first question?
 
 Hold on... If the maximum age of the person in the dataset is 75, this means that they had to be born in the year 1985 - well before the first colonies were established, so their home planet cannot be Mars. 
 
-We need to find a way to determine the maximum age for Earth and Mars born people separately. 
+We need to find a way to determine the maximum age for Earth and Mars born people separately. To acheive this we will use the `groupby()` method and the `max()` function.
 
 ```yaml
 type: NormalExercise
@@ -113,10 +116,13 @@ xp: 100
 skills: 2
 ```
 
-
 `@instructions`
 
-`@hint`
+1) Use the `groupby` method on `home_planet` column of `df` to view the data through the lense of customer's origin planet
+
+2) Use the `max()` function to determine the maximum value
+
+3) Assign the code to a variable `max_mars_age` and print it out
 
 `@pre_exercise_code`
 ```{python}
@@ -126,17 +132,23 @@ df = pd.read_csv('https://assets.datacamp.com/production/repositories/2588/datas
 
 `@sample_code`
 ```{python}
-df.____('home_planet').____()['age']
+#Your code below
+____ = df.____('home_planet').____['age']
+
+print(____)
 ```
 
 `@solution`
 ```{python}
-df.groupby('home_planet').max()['age']
+#Your code below
+max_mars_age = df.groupby('home_planet').max()['age']
+
+print(max_mars_age)
 ```
 
 `@sct`
 ```{python}
-
+Ex().has_equal_ast()
 ```
 
 ---
@@ -153,11 +165,10 @@ skills: 2
 
 `@instructions`
 
-`@hint`
-
 `@pre_exercise_code`
 ```{python}
-
+import pandas as pd
+df = pd.read_csv('https://assets.datacamp.com/production/repositories/2588/datasets/73d9f6626d0059203da53d733f5f781c4c9aed32/mars_data.csv')
 ```
 
 `@sample_code`

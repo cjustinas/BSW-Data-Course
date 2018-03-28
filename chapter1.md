@@ -68,7 +68,7 @@ Now that you have imported `pandas` library, we can focus on acquiring the data.
 Pandas can import data from a variety of sources that include text files, databases, APIs and so on. For this particular project we will import a CSV (comma-separated value) file.
 
 `@instructions`
-1) Use `pd.read_csv()` to tell Python you want to import an Excel file.
+1) Use `pd.read_csv()` to tell Python you want to import an Excel file
 
 2) Make sure you include the filename `mars_data`
 
