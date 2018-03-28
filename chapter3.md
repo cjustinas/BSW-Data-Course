@@ -1,5 +1,5 @@
 ---
-title       : Analysing the data
+title       : Analyse the data
 description : 
 ---
 ## Find the value sum of a column

@@ -152,7 +152,7 @@ Ex().has_equal_ast()
 ```
 
 ---
-## <<<New Exercise>>>
+## Visualise the data
 
 ```yaml
 type: NormalExercise
@@ -168,7 +168,7 @@ skills: 2
 `@pre_exercise_code`
 ```{python}
 import pandas as pd
-df = pd.read_csv('https://assets.datacamp.com/production/repositories/2588/datasets/73d9f6626d0059203da53d733f5f781c4c9aed32/mars_data.csv')
+df = pd.read_csv('https://assets.datacamp.com/production/repositories/2588/datasets/e8c7de0372cfe29b1be7bad2b16e28e2e9a56d01/mars_data.csv')
 ```
 
 `@sample_code`
@@ -176,6 +176,8 @@ df = pd.read_csv('https://assets.datacamp.com/production/repositories/2588/datas
 #Import the required modules
 import matplotlib.pyplot as plt
 
+df['age'].plot.hist()
+plt.sho()
 ```
 
 `@solution`
@@ -184,6 +186,8 @@ import matplotlib.pyplot as plt
 import matplotlib.pyplot as plt
 
 #Visaulise 
+df['age'].plot.hist()
+plt.sho()
 
 ```
 
