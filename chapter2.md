@@ -169,12 +169,13 @@ skills: 2
 ```{python}
 import pandas as pd
 df = pd.read_csv('https://assets.datacamp.com/production/repositories/2588/datasets/e8c7de0372cfe29b1be7bad2b16e28e2e9a56d01/mars_data.csv')
+import matplotlib.pyplot as plt
 ```
 
 `@sample_code`
 ```{python}
 #Import the required modules
-import matplotlib.pyplot as plt
+
 
 df['age'].plot.hist()
 plt.sho()
