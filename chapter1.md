@@ -29,9 +29,6 @@ Two of the most useful libraries are:
 Import `pandas` library and name it `pd` for ease of use. 
 
 The code to import the `numpy` library has already been written for you as an example.
-
-
-
 `@sample_code`
 ```{python}
 #Import numpy library
@@ -48,11 +45,6 @@ import pandas as pd
 ```{python}
 test_import("pandas", same_as = True)
 ```
-
-
-
-
-
 ---
 ## Import the data
 
@@ -63,40 +55,36 @@ xp: 100
 skills: 2
 key: 56c6ebec11
 ```
-
 Now that you have imported `pandas` library, we can focus on acquiring the data. This means pointing pandas to a data source, so it can transform it into a `Data Frame`. In very broad terms a Data Frame is simply a data structure with rows and columns or observations and variables (you can think of it as a spreadsheet).
 
-Pandas can import data from a variety of sources that include text files, databases, APIs and so on. For this particular project we will import an Excel file.
+Pandas can import data from a variety of sources that include text files, databases, APIs and so on. For this particular project we will import a CSV (comma-separated value) file.
 
 `@instructions`
-1) Use `pd.read_excel()` to tell Python you want to import an Excel file.
+1) Use `pd.read_csv()` to tell Python you want to import an Excel file.
 
-2) Make sure you include the filename `'mars_data.xlsx'`
+2) Make sure you include the filename `mars_data`
 
-3) Assign the code above to a variable `df` (abreviation of Data Frame)
+3) Assign the code to a variable `df` (abreviation of Data Frame)
 
 
 `@pre_exercise_code`
 ```{python}
 import pandas as pd
+mars_data = 'https://assets.datacamp.com/production/repositories/2588/datasets/73d9f6626d0059203da53d733f5f781c4c9aed32/mars_data.csv'
 ```
 `@sample_code`
 ```{python}
-#Complete the code below
+#Complete the data import below
 ____ = pd.____(____)
 ```
 `@solution`
 ```{python}
-df = pd.read_excel('https://assets.datacamp.com/production/repositories/2588/datasets/e99d6698448d2ce8e57cb8cd504dfed305c65799/mars_data.xlsx')
+df = pd.read_csv(mars_data)
 ```
 `@sct`
 ```{python}
-test_object("df")
+test_data_frame("df", columns=['zone','product','lifetime_value','age','home_planet'])
 ```
-
-
-
-
 
 ---
 ## Check your data
@@ -108,15 +96,18 @@ xp: 100
 skills: 2
 key: 713861b8dd
 ```
-
 Congratulations! You have just imported your data...
 
-...or have you? To view and check your data we will use the `head()` and `tail()` methods.
+...or have you? To check your data we will use the `head()` and `tail()` methods.
+
+To view the output of your actions in the console you will you use the `print()` function.
 
 `@instructions`
-Use `tail()` method on the df object and specify the parameter of `10` inside the brackets to view the last 10 rows of the Data Frame.
+1) Use `tail()` method on the `df` object and specify the parameter of `10` inside the brackets to view the last 10 rows of the DataFrame.
 
 The `head()` method has been writen for you as an exmaple (it returns 5 rows of data if you do not specify a number in the brakcets).
+
+2) Wrap the code you write in a `print()` function "print out" the output
 
 `@hint`
 
@@ -124,32 +115,34 @@ The `head()` method has been writen for you as an exmaple (it returns 5 rows of 
 `@pre_exercise_code`
 ```{python}
 import pandas as pd 
-import xlrd
-df = pd.read_excel('https://assets.datacamp.com/production/repositories/2588/datasets/e99d6698448d2ce8e57cb8cd504dfed305c65799/mars_data.xlsx')
+mars_data = 'https://assets.datacamp.com/production/repositories/2588/datasets/73d9f6626d0059203da53d733f5f781c4c9aed32/mars_data.csv'
 ```
 `@sample_code`
 ```{python}
 #Check the first 5 rows of the DataFrame
 df.head()
 
+#Check and print the first 5 rows of the DataFrame
+print(df.head())
+
 #Check the last 10 rows of the DataFrame
-df.____(____)
+____(df.____(____))
 ```
 `@solution`
 ```{python}
 #Check the first 5 rows of the DataFrame
-
 df.head()
 
+#Check and print the first 5 rows of the DataFrame
+print(df.head())
+
 #Check the last 10 rows of the DataFrame
-
-df.tail(10)
+print(df.tail(10))
 ```
-
-
-
-
-
+`@sct`
+```{python}
+Ex().has_equal_ast(code= "print(df.tail(10))")
+```
 
 ---
 ## Bring it all together
@@ -161,8 +154,7 @@ xp: 100
 skills: 2
 key: 689f678c19
 ```
-
-You have made good progress so far. Not only have you learned about the importance of labraries, but also imported data required for the upcoming analysis and cheked if the import has been succesful. At this rate you will become an expierenced data analyst in no time!
+You have made good progress so far. Not only have you learned about the importance of labraries, but also imported the data for the upcoming analysis and cheked if the import has been succesful. Lastly, you learned about the very common print function. At this rate you will become an expierenced data analyst in no time!
 
 We also briefly touched upon variables by defining `df`. But more on that in the upcoming exercises...
 
@@ -171,15 +163,18 @@ For now, review the glorious code you have writen.
 `@instructions`
 Click `Submit Answer` once you are ready to proceed!
 
-
-
+`@pre_exercise_code`
+```{python}
+import pandas as pd 
+mars_data = 'https://assets.datacamp.com/production/repositories/2588/datasets/e8c7de0372cfe29b1be7bad2b16e28e2e9a56d01/mars_data.csv'
+```
 `@sample_code`
 ```{python}
 import pandas as pd
 
-df = pd.read_csv('AAA.xlsx')
+df = pd.read_csv(mars_data)
 
-df.head()
+print(df.head())
 ```
 
 

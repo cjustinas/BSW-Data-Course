@@ -19,8 +19,8 @@ Use the `info()` method on the `df`
 
 `@pre_exercise_code`
 ```
-import pandas as pd 
-
+import pandas as pd
+df = pd.read_csv('https://assets.datacamp.com/production/repositories/2588/datasets/73d9f6626d0059203da53d733f5f781c4c9aed32/mars_data.csv')
 ```
 
 `@sample_code`
@@ -61,17 +61,20 @@ Use the `describe()` method on `df`
 
 `@pre_exercise_code`
 ```{python}
-
+import pandas as pd
+df = pd.read_csv('https://assets.datacamp.com/production/repositories/2588/datasets/73d9f6626d0059203da53d733f5f781c4c9aed32/mars_data.csv')
 ```
 
 `@sample_code`
 ```{python}
-
+#Your code below
+print(df.____())
 ```
 
 `@solution`
 ```{python}
-
+#Your code below
+df.describe()
 ```
 
 `@sct`
@@ -104,17 +107,18 @@ skills: 2
 
 `@pre_exercise_code`
 ```{python}
-
+import pandas as pd
+df = pd.read_csv('https://assets.datacamp.com/production/repositories/2588/datasets/73d9f6626d0059203da53d733f5f781c4c9aed32/mars_data.csv')
 ```
 
 `@sample_code`
 ```{python}
-
+df.____('home_planet').____()['age']
 ```
 
 `@solution`
 ```{python}
-
+df.groupby('home_planet').max()['age']
 ```
 
 `@sct`
@@ -145,11 +149,17 @@ skills: 2
 
 `@sample_code`
 ```{python}
+#Import the required modules
+import matplotlib.pyplot as plt
 
 ```
 
 `@solution`
 ```{python}
+#Import the visaulisaton library
+import matplotlib.pyplot as plt
+
+#Visaulise 
 
 ```
 
