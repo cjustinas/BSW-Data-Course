@@ -11,20 +11,22 @@ lang: python
 xp: 100
 skills: 2
 ```
-We will begin by getting some very braod infromation about the Data Frame df. 
+We will begin by getting some very braod infromation about the DataFrame `df`. For this purpose you will use the `info()` method.
+
+Aftet you submit the solution, take some time to read the success message that will help you interpret the results.
 
 `@instructions`
 
-Use the `info()` method on the `df`
+Use the `info()` method on `df`
 
 `@pre_exercise_code`
 ```
 import pandas as pd
 df = pd.read_csv('https://assets.datacamp.com/production/repositories/2588/datasets/73d9f6626d0059203da53d733f5f781c4c9aed32/mars_data.csv')
 ```
-
 `@sample_code`
-```
+```{python}
+#Your code below
 df.____()
 
 ```
@@ -36,7 +38,8 @@ df.info()
 
 `@sct`
 ```{python}
-
+Ex().has_equal_ast()
+success_msg("Success! You can see that the DataFrame has 110 rows of data and 6 columns. Furthermore, you can see the column names and the variable types that populate them.")
 ```
 
 ---
@@ -49,9 +52,9 @@ lang: python
 xp: 100
 skills: 2
 ```
-The `info()` method has given you some limited insight into the dataset. You discovered 
+The `info()` method has given you some high-level insight into the dataset as a whole.
 
-What about some more statistical description of the data? For this purpose we will use the `describe()`method.
+What about some more statistical description of the individual columns? For this purpose we will use the `describe()`method.
 
 `@instructions`
 
@@ -68,7 +71,7 @@ df = pd.read_csv('https://assets.datacamp.com/production/repositories/2588/datas
 `@sample_code`
 ```{python}
 #Your code below
-print(df.____())
+df.____()
 ```
 
 `@solution`
@@ -79,7 +82,7 @@ df.describe()
 
 `@sct`
 ```{python}
-
+Ex().has_equal_ast()
 ```
 
 
