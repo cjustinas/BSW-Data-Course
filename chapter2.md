@@ -54,11 +54,17 @@ skills: 2
 ```
 The `info()` method has given you some high-level insight into the dataset as a whole.
 
-What about some more statistical description of the individual columns? For this purpose we will use the `describe()`method.
+What about some statistical description of the individual columns? For this purpose we will use the `describe()`method.
+
+This time you will also have to print out the output. Take some time to interpret it. 
 
 `@instructions`
 
-Use the `describe()` method on `df`
+1) Use the `describe()` method on `df`
+
+2) Assign your code to a variable `description`
+
+3) Print out the variable `description`
 
 `@hint`
 
@@ -71,29 +77,33 @@ df = pd.read_csv('https://assets.datacamp.com/production/repositories/2588/datas
 `@sample_code`
 ```{python}
 #Your code below
-df.____()
+____ = df.____()
+
+print(____)
 ```
 
 `@solution`
 ```{python}
 #Your code below
-df.describe()
+description = df.describe()
+
+print(description)
 ```
 
 `@sct`
 ```{python}
 Ex().has_equal_ast()
+success_msg("Wow, you just received a lot of useful information with a single `describe()` method!")
+
 ```
 
 
 ---
 ## Explore a single column
 
-Wow, you just received a lot of useful information with a single `describe()` method! 
+Hold on... If the maximum age of the person in the dataset is 75, this means that they had to be born in the year 1985 - well before the first colonies were established, so their home planet cannot be Mars. 
 
-Hold on... on second thought something is not right here. If the maximum age of the person in the dataset is 75, this means that they had to be born in the year 1985 - well before the first colonies were established, so their home planet cannot be Mars. 
-
-We need to find a way to determine the maximum age for 
+We need to find a way to determine the maximum age for Earth and Mars born people separately. 
 
 ```yaml
 type: NormalExercise
