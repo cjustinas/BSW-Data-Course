@@ -6,5 +6,5 @@ set -e
 pip3 install pandas==0.22.0
 pip3 install matplotlib==2.2.2
 pip3 install scikit-learn==0.19.1
-
+pip3 install seaborn
 
