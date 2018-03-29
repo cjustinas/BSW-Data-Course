@@ -1,6 +1,6 @@
 ---
 title       : Analyse the data
-description : 
+description : In this chapter you will work to do the heavy lifting analysis that your manager has asked for.
 ---
 ## Find the value sum of a column
 
@@ -53,6 +53,150 @@ total_value = 22005
 test_object('total_value')
 ```
 
+---
+## Find correlation between two variables
+
+```yaml
+type: NormalExercise
+key: b8cf4b8501
+lang: python
+xp: 100
+skills: 2
+```
+The second 
+
+`@instructions`
+
+`@hint`
+
+`@pre_exercise_code`
+```{python}
+
+```
+
+`@sample_code`
+```{python}
+print(df.corr())
+
+```
+
+`@solution`
+```{python}
+
+```
+
+`@sct`
+```{python}
+
+```
+
+---
+## Transform the data
+
+```yaml
+type: NormalExercise
+key: 7e71720519
+lang: python
+xp: 100
+skills: 2
+```
+
+
+`@instructions`
+
+`@hint`
+
+`@pre_exercise_code`
+```{python}
+
+```
+
+`@sample_code`
+```{python}
+
+```
+
+`@solution`
+```{python}
+
+```
+
+`@sct`
+```{python}
+
+```
+
+---
+## Find correlation between transformed variables
+
+```yaml
+type: NormalExercise
+key: a97d1d137c
+lang: python
+xp: 100
+skills: 2
+```
+
+
+`@instructions`
+
+`@hint`
+
+`@pre_exercise_code`
+```{python}
+
+```
+
+`@sample_code`
+```{python}
+
+```
+
+`@solution`
+```{python}
+
+```
+
+`@sct`
+```{python}
+
+```
+
+---
+## Visualise the correlations
+
+```yaml
+type: NormalExercise
+key: 1d3c536bd7
+lang: python
+xp: 100
+skills: 2
+```
+
+
+`@instructions`
+
+`@hint`
+
+`@pre_exercise_code`
+```{python}
+
+```
+
+`@sample_code`
+```{python}
+
+```
+
+`@solution`
+```{python}
+
+```
+
+`@sct`
+```{python}
+
+```
 ---
 ## Bring it all together
 

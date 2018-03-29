@@ -101,57 +101,6 @@ success_msg("Wow, you just received a lot of useful information with a single `d
 
 
 ---
-## Explore a single column
-The `description` method has provided yo with the maximum age value in the datased, so maybe this has helped to answer your manager's first question?
-
-Hold on... If the maximum age of the person in the dataset is 75, this means that they had to be born in the year 1985 - well before the first colonies were established, so their home planet cannot be Mars. 
-
-We need to find a way to determine the maximum age for Earth and Mars born people separately. To acheive this we will use the `groupby()` method and the `max()` function.
-
-```yaml
-type: NormalExercise
-key: 7875e652d6
-lang: python
-xp: 100
-skills: 2
-```
-
-`@instructions`
-
-1) Use the `groupby` method on `home_planet` column of `df` to view the data through the lense of customer's origin planet
-
-2) Use the `max()` function to determine the maximum value
-
-3) Assign the code to a variable `max_mars_age` and print it out
-
-`@pre_exercise_code`
-```{python}
-import pandas as pd
-df = pd.read_csv('https://assets.datacamp.com/production/repositories/2588/datasets/73d9f6626d0059203da53d733f5f781c4c9aed32/mars_data.csv')
-```
-
-`@sample_code`
-```{python}
-#Your code below
-____ = df.____('home_planet').____['age']
-
-print(____)
-```
-
-`@solution`
-```{python}
-#Your code below
-max_mars_age = df.groupby('home_planet').max()['age']
-
-print(max_mars_age)
-```
-
-`@sct`
-```{python}
-Ex().has_equal_ast()
-```
-
----
 ## Visualise the data
 
 ```yaml
@@ -161,40 +110,58 @@ lang: python
 xp: 100
 skills: 2
 ```
+Statistical analysis is great but sometimes a visauisation can be an extremely powerful tool to understand the data quickly and effectively. For this purpose you will import an new library called `matplotlib`.
 
+We will focus on understading the disctirubtions of our data by creating a histogram. This will help your statistical analysis in the upcoming chapter. 
 
 `@instructions`
+
+1) Import the `matplotlib.pyplot` library as `plt`
+
+2) Create a histogram of the `age` variable by using `hist`
+
+3) Create a histogram of the `lifetime_value` variable by using `hist`
+
+4) Make 
 
 `@pre_exercise_code`
 ```{python}
 import pandas as pd
 df = pd.read_csv('https://assets.datacamp.com/production/repositories/2588/datasets/e8c7de0372cfe29b1be7bad2b16e28e2e9a56d01/mars_data.csv')
-import matplotlib.pyplot as plt
 ```
 
 `@sample_code`
 ```{python}
 #Import the required modules
+import matplotlib.pyplot as ____
 
+#Create a histogram to show the distribution of age variable
+df['____'].plot.____()
+plt.show()
 
-df['age'].plot.hist()
-plt.sho()
+#Create a histogram to show the distribution of lifetime value variable 
+df['____'].plot.____()
+____
 ```
 
 `@solution`
 ```{python}
-#Import the visaulisaton library
+#Import the required modules
 import matplotlib.pyplot as plt
 
-#Visaulise 
+#Create a histogram to show the distribution of age variable
 df['age'].plot.hist()
-plt.sho()
+plt.show()
 
+#Create a histogram to show the distribution of lifetime value variable 
+df['lifetime_value'].plot.hist()
+plt.show()
 ```
 
 `@sct`
 ```{python}
-
+Ex().has_equal_ast()
+success_msg("Great work! Note that your data is skewed. We will have to do something about this in the future")
 ```
 ---
 ## Bring it all together
@@ -214,16 +181,24 @@ Well done! You have
 `@hint`
 
 `@pre_exercise_code`
-```
+```{python}
 import pandas as pd
-
+df = pd.read_csv('https://assets.datacamp.com/production/repositories/2588/datasets/e8c7de0372cfe29b1be7bad2b16e28e2e9a56d01/mars_data.csv')
 ```
 
 `@sample_code`
-```
+```{python}
+import matplotlib.pyplot as plt
+
 df.info()
 
 df.describe()
+
+df['age'].plot.hist()
+plt.show()
+
+df['lifetime_value'].plot.hist()
+plt.show()
 
 ```
 

@@ -4,4 +4,4 @@ description: This short course will give you a basic intorduction into the woder
 programming_language: python
 from: python-base-prod:21
 datasets:
-  mars_data.xlsx: Mars data
+  mars_data.xlsx: Mars Data
