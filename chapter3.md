@@ -108,6 +108,8 @@ success_msg("Looks like your manager's intuition was right and now you have some
 ---
 ## Transform the data
 
+
+
 ```yaml
 type: NormalExercise
 key: 7e71720519
@@ -199,9 +201,12 @@ skills: 2
 `@pre_exercise_code`
 ```{python}
 import pandas as pd
+import numpy as np
 df = pd.read_csv('https://assets.datacamp.com/production/repositories/2588/datasets/73d9f6626d0059203da53d733f5f781c4c9aed32/mars_data.csv')
+df['log_age'] = np.log(df['age'])
+df['log_value'] = np.log(df['lifetime_value'])
 import seaborn as sns
-import matplotlib as plt
+import matplotlib.pyplot as plt
 ```
 
 `@sample_code`
