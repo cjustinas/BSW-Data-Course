@@ -1,6 +1,6 @@
 ---
 title       : Analyse the data
-description : In this chapter you will work to do the heavy lifting analysis that your manager has asked for.
+description : In this chapter you will work to do the main analysis work. This includes calculating the sum of a column, transforming data and finding correlation between variables.
 ---
 ## Find the value sum of a column
 

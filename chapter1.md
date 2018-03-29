@@ -1,6 +1,7 @@
 ---
 title: Getting started
-description: In this chapter you will learn how to kick off your data analysis project. This includes equiping your working environment with powerful libraries, importing the data you want to analyse and checking if the data import has been succesful.
+description: >-
+  In this chapter you will learn how to kick off your data analysis project. This includes equipping your working environment with powerful libraries, importing the data you want to analyze and checking if the data import has been successful.
 
 
 ---
@@ -14,7 +15,7 @@ skills: 2
 key: 286ddf980c
 ```
 
-`Libraries` are collections of code that have been wirtten by other developers and packaged for anyone to use.
+`Libraries` are collections of code that have been written by other developers and packaged for anyone to use.
 
 Imagine libraries as tools for building a house - you would not make your own hammer, nails and bricks, but rather buy these items in a shop. Similarly, libraries equip you with useful code that can be easily reused. For free! 
 
@@ -72,7 +73,9 @@ Pandas can import data from a variety of sources that include text files, databa
 
 2) Make sure you include the filename `mars_data`
 
-3) Assign the code to a variable `df` (abreviation of Data Frame)
+3) Assign the code to a variable `df` (abbreviation of Data Frame)
+
+`@hint`
 
 
 `@pre_exercise_code`
@@ -118,7 +121,7 @@ To view the output of your actions in the console you will you use the `print()`
 `@instructions`
 1) Use `tail()` method on the `df` object and specify the parameter of `10` inside the brackets to view the last 10 rows of the DataFrame.
 
-The `head()` method has been writen for you as an exmaple (it returns 5 rows of data if you do not specify a number in the brakcets).
+The `head()` method has been written for you as an example (it returns 5 rows of data if you do not specify a number in the brackets).
 
 2) Wrap the code you write in a `print()` function "print out" the output
 
@@ -156,6 +159,11 @@ print(df.tail(10))
 ```{python}
 Ex().has_equal_ast()
 ```
+
+
+
+
+
 ---
 ## Bring it all together
 
@@ -167,14 +175,16 @@ skills: 2
 key: 689f678c19
 ```
 
-You have made good progress so far. Not only have you learned about the importance of labraries, but also imported the data for the upcoming analysis and cheked if the import has been succesful. Lastly, you learned about the very common print function. At this rate you will become an expierenced data analyst in no time!
+You have made good progress so far. Not only have you learned about the importance of libraries, but also imported the data for the upcoming analysis and checked if the import has been successful. Lastly, you learned about the very common print function. At this rate you will become an experienced data analyst in no time!
 
 We also briefly touched upon variables by defining `df`. But more on that in the upcoming exercises...
 
-For now, review the glorious code you have writen.
+For now, review the glorious code you have written.
 
 `@instructions`
 Click `Submit Answer` once you are ready to proceed!
+
+`@hint`
 
 
 `@pre_exercise_code`
