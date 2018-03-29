@@ -133,6 +133,9 @@ skills: 2
 
 `@solution`
 ```{python}
+df['log_age'] = np.log(df['age'])
+
+df['log_value'] = np.log(df['lifetime_value'])
 
 ```
 
@@ -169,7 +172,7 @@ skills: 2
 
 `@solution`
 ```{python}
-
+df['log_value'].corr(df['log_age'])
 ```
 
 `@sct`
@@ -178,7 +181,7 @@ skills: 2
 ```
 
 ---
-## Visualise the correlations
+## Visualise the correlation
 
 ```yaml
 type: NormalExercise
@@ -205,7 +208,8 @@ skills: 2
 
 `@solution`
 ```{python}
-
+sns.lmplot(x='log_age', y='log_value', data=df)
+plt.show()
 ```
 
 `@sct`
