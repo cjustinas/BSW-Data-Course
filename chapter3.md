@@ -17,7 +17,7 @@ Your manager has asked to find the total value of all the transactions that took
 
 `@instructions`
 
-1) Select the `lifetime_value` column of `df`
+1) Select the `'lifetime_value'` column of `df`
 
 2) Apply the `.sum()` method
 
@@ -67,7 +67,7 @@ Your manager is convinced there is positive correlation between a customer's age
 We will use the `corr()` pandas function to see if your manager is right. 
 
 `@instructions`
-1) Use the `corr()` function to find the correlation between `age` and `lifetime_value`
+1) Use the `corr()` function to find the correlation between `'age` and `lifetime_value'`
 
 2) Assign the code to a variable `correlation`
 
@@ -107,7 +107,7 @@ success_msg("Looks like your manager's intuition was right and now you have some
 
 ---
 ## Transform the data
-
+Your preliminary analysis looks very pormising! However, do you remember when we looked at the 
 
 
 ```yaml
