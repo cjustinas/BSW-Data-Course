@@ -102,7 +102,7 @@ print(correlation)
 `@sct`
 ```{python}
 Ex().has_equal_ast()
-success_msg("Looks like your manager's intuition was right and now you have some empyrical evidence to support it!)
+success_msg("Looks like your manager's intuition was right and now you have some empyrical evidence to support it!")
 ```
 
 ---
@@ -125,11 +125,16 @@ skills: 2
 
 `@pre_exercise_code`
 ```{python}
-
+import pandas as pd
+import numpy as np
+df = pd.read_csv('https://assets.datacamp.com/production/repositories/2588/datasets/73d9f6626d0059203da53d733f5f781c4c9aed32/mars_data.csv')
 ```
 
 `@sample_code`
 ```{python}
+df['log_age'] = np.log(df['age'])
+
+df['log_value'] = np.log(df['lifetime_value'])
 
 ```
 
@@ -143,7 +148,7 @@ df['log_value'] = np.log(df['lifetime_value'])
 
 `@sct`
 ```{python}
-
+Ex().has_equal_ast()
 ```
 
 ---
@@ -205,18 +210,29 @@ import numpy as np
 df = pd.read_csv('https://assets.datacamp.com/production/repositories/2588/datasets/73d9f6626d0059203da53d733f5f781c4c9aed32/mars_data.csv')
 df['log_age'] = np.log(df['age'])
 df['log_value'] = np.log(df['lifetime_value'])
-import seaborn as sns
 import matplotlib.pyplot as plt
 ```
 
 `@sample_code`
 ```{python}
+import seaborn as ____
+
+
+sns.lmplot(x='log_age', y='log_value', data=df)
+
+
+plt.____()
 
 ```
 
 `@solution`
 ```{python}
+import seaborn as sns
+
+
 sns.lmplot(x='log_age', y='log_value', data=df)
+
+
 plt.show()
 ```
 
