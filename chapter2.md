@@ -1,6 +1,6 @@
 ---
 title       : Explore the data
-description : Before any serious analysis can begin, it is important to understand your data. We do this by perfomring Exploratory Data Anlysis (EDA). A few of EDA methods will be covered in this chapter.
+description : Before any serious analytics can begin, it is important to understand your data better. We do this by perfomring Exploratory Data Anlysis (EDA). A few of the available EDA methods will be covered in this chapter.
 ---
 ## Let's get some info! 
 
@@ -11,7 +11,7 @@ lang: python
 xp: 100
 skills: 2
 ```
-We will begin by getting some very braod infromation about the DataFrame `df`. For this purpose you will use the `info()` method.
+We will begin by getting some very broad information about the DataFrame `df`. For this purpose you will use the `info()` method.
 
 Aftet you submit the solution, take some time to read the success message that will help you interpret the results.
 
@@ -81,6 +81,7 @@ df = pd.read_csv('https://assets.datacamp.com/production/repositories/2588/datas
 #Your code below
 ____ = df.____()
 
+#Print the variable below
 print(____)
 ```
 
@@ -89,6 +90,7 @@ print(____)
 #Your code below
 description = df.describe()
 
+#Print the variable below
 print(description)
 ```
 
@@ -110,9 +112,11 @@ lang: python
 xp: 100
 skills: 2
 ```
-Statistical analysis is great but sometimes a visauisation can be an extremely powerful tool to understand the data quickly and effectively. For this purpose you will import an new library called `matplotlib`.
+Statistical analysis is great but sometimes a visualisation can be an extremely powerful tool to understand the data quickly and effectively. For this purpose you will import an new library called `matplotlib`.
 
 We will focus on understading the disctirubtions of our data by creating a histogram. This will help your statistical analysis in the upcoming chapter. 
+
+After you submit the exercises, let's take some time to interprt the results.
 
 `@instructions`
 
@@ -122,7 +126,7 @@ We will focus on understading the disctirubtions of our data by creating a histo
 
 3) Create a histogram of the `lifetime_value` variable by using `hist`
 
-4) Make 
+4) Display the histogram by using `plt.show()`
 
 `@pre_exercise_code`
 ```{python}
@@ -161,7 +165,7 @@ plt.show()
 `@sct`
 ```{python}
 Ex().has_equal_ast()
-success_msg("Great work! Note that your data is skewed. We will have to do something about this in the future")
+success_msg("Great work! Note that your data is skewed. We will have to do something about this in the future exercises")
 ```
 ---
 ## Bring it all together

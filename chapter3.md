@@ -83,7 +83,7 @@ df = pd.read_csv('https://assets.datacamp.com/production/repositories/2588/datas
 `@sample_code`
 ```{python}
 #Find the correlation between the two variables
-correlation = df['age'].___(df['lifetime_value'])
+____ = df['age'].___(df['lifetime_value'])
 
 #Print out the results
 print(_____)
@@ -101,7 +101,7 @@ print(correlation)
 
 `@sct`
 ```{python}
-test_object('total_value')
+Ex().has_equal_ast()
 success_msg("Looks like your manager's intuition was right and now you have some empyrical evidence to support it!)
 ```
 
