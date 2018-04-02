@@ -46,7 +46,6 @@ import pandas as pd
 test_import("pandas", same_as = True)
 success_msg("Good job! The required libraries have been imported.")
 ```
-
 ---
 ## Import the data
 
@@ -88,8 +87,6 @@ df = pd.read_csv(mars_data)
 test_data_frame("df", columns=['zone','product','lifetime_value','age','home_planet'])
 success_msg("Nice! Now you have a dataset to work with.")
 ```
-
-
 ---
 ## Check your data
 
@@ -186,8 +183,3 @@ print(df.head())
 Ex().has_equal_ast()
 success_msg("You have completed Chapter 1! Let's keep going.")
 ```
-
-
-
-
-
