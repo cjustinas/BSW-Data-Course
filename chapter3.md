@@ -62,7 +62,7 @@ lang: python
 xp: 100
 skills: 2
 ```
-Your manager is convinced there is positive correlation between a customer's age and their lifetime value. This means that the indipendent variable of age influences the dependent variable of profit. In other words, the older the cusotmer, the more profit the bank receives from doing business with them. This could happen for a viarety of reasons and your task is to explore the hypothesis further. 
+Your manager is convinced there is positive correlation between a customer's age and their lifetime value. This means that the indipendent variable of age influences the dependent variable of profit. In other words, the older the cusotmer, the more profit the bank receives from doing business with them. This could happen for a viarety of reasons. Your task is to explore the manager's hypothesis further. 
 
 We will use the `corr()` pandas function to see if your manager is right. 
 
@@ -109,8 +109,7 @@ success_msg("Looks like your manager's intuition was right and now you have some
 ## Transform the data
 Your preliminary analysis looks very pormising! However, do you remember when we looked at the distribution of the data in Chapter 2? Both, the `age` and `lifetime_value` variables are skewed to the right and this is most definetely affecting out correaltion findings. 
 
-Worry not! We can fix this by transforming the variables. To do this we will apply the `numpy` `log` function to all the data points in the two columns. 
-
+Worry not! We can fix this by transforming the variables. To do this we will apply the numpy `log()` function to all the data points in the two columns. 
 
 ```yaml
 type: NormalExercise
@@ -120,10 +119,9 @@ xp: 100
 skills: 2
 ```
 
-
 `@instructions`
 
-`@hint`
+1) 
 
 `@pre_exercise_code`
 ```{python}
