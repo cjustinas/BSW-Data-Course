@@ -49,7 +49,7 @@ total_value = 22005
 `@sct`
 ```{python}
 test_object('total_value')
-success_msg("Good work! You can now report a profit of $22005 for the day now!")
+success_msg("Good work! You can now report a profit of $22005 for the day!")
 ```
 
 ---
@@ -62,7 +62,7 @@ lang: python
 xp: 100
 skills: 2
 ```
-Your manager is convinced there is positive correlation between a customer's age and their lifetime value. This means that the indipendent variable of age influences the dependent variable of profit. In other words, the older the cusotmer, the more profit the bank receives. This could be for a viarety of reasons and your task is to explore this hypothesis further. 
+Your manager is convinced there is positive correlation between a customer's age and their lifetime value. This means that the indipendent variable of age influences the dependent variable of profit. In other words, the older the cusotmer, the more profit the bank receives from doing business with them. This could happen for a viarety of reasons and your task is to explore the hypothesis further. 
 
 We will use the `corr()` pandas function to see if your manager is right. 
 
@@ -107,7 +107,9 @@ success_msg("Looks like your manager's intuition was right and now you have some
 
 ---
 ## Transform the data
-Your preliminary analysis looks very pormising! However, do you remember when we looked at the 
+Your preliminary analysis looks very pormising! However, do you remember when we looked at the distribution of the data in Chapter 2? Both, the `age` and `lifetime_value` variables are skewed to the right and this is most definetely affecting out correaltion findings. 
+
+Worry not! We can fix this by transforming the variables. To do this we will apply the `numpy` `log` function to all the data points in the two columns. 
 
 
 ```yaml
@@ -128,22 +130,43 @@ skills: 2
 import pandas as pd
 import numpy as np
 df = pd.read_csv('https://assets.datacamp.com/production/repositories/2588/datasets/73d9f6626d0059203da53d733f5f781c4c9aed32/mars_data.csv')
+import seaborn as sns
+import matplotlib.pyplot as plt
 ```
 
 `@sample_code`
 ```{python}
-df['log_age'] = np.log(df['age'])
+#Transform the age variable 
+df['log_age'] = np.____(df['age'])
 
-df['log_value'] = np.log(df['lifetime_value'])
+#Transform the lifetime_value variable 
+df['log_value'] = np.____(df['lifetime_value'])
+
+#The code below will help you visualise the transformed variables
+sns.distplot(df['log_age'])
+plt.show()
+
+sns.distplot(df['log_value'])
+plt.show()
 
 ```
 
 `@solution`
 ```{python}
+#Transform the age variable 
 df['log_age'] = np.log(df['age'])
 
+#Transform the lifetime_value variable 
 df['log_value'] = np.log(df['lifetime_value'])
 
+#The code below will help you visualise the transformed variables
+plt.figure()
+sns.distplot(df['log_age'])
+plt.show()
+
+plt.figure()
+sns.distplot(df['log_value'])
+plt.show()
 ```
 
 `@sct`
@@ -165,26 +188,43 @@ skills: 2
 
 `@instructions`
 
-`@hint`
+1) Use the `corr()` function to find the correlation between the transformed values
+
+2) Assign the code to the variable `new_correlation`
+
+3) Print the newly assigned variable
 
 `@pre_exercise_code`
 ```{python}
-
+import pandas as pd
+import numpy as np
+df = pd.read_csv('https://assets.datacamp.com/production/repositories/2588/datasets/73d9f6626d0059203da53d733f5f781c4c9aed32/mars_data.csv')
+df['log_age'] = np.log(df['age'])
+df['log_value'] = np.log(df['lifetime_value'])
 ```
 
 `@sample_code`
 ```{python}
+#Find the new correlation
+____ = df['log_value'].____(df['log_age'])
 
+#Print out the result
+print(____)
 ```
 
 `@solution`
 ```{python}
-df['log_value'].corr(df['log_age'])
+#Find the new correlation
+new_correlation = df['log_value'].corr(df['log_age'])
+
+#Print out the result
+print(new_correlation)
 ```
 
 `@sct`
 ```{python}
-
+Ex().has_equal_ast()
+success_msg("Great! By transforming the variables, you were able to improve the coefficient from 0.228 to 0.329!"
 ```
 
 ---
@@ -242,6 +282,8 @@ plt.show()
 ```
 ---
 ## Bring it all together
+
+This is it! You come a long way today. 
 
 ```yaml
 type: NormalExercise

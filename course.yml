@@ -1,4 +1,6 @@
 title: BIW Data Analytics Introduction
+description: This short course will give you a basic intorduction into the woderful
+  and excting world of data analytics.
 programming_language: python
 from: python-base-prod:21
 datasets:
