@@ -14,7 +14,6 @@ xp: 100
 skills: 2
 key: 286ddf980c
 ```
-
 `Libraries` are collections of code that have been written by other developers and packaged for anyone to use.
 
 Imagine libraries as tools for building a house - you would not make your own hammer, nails and bricks, but rather buy these items in a shop. Similarly, libraries equip you with useful code that can be easily reused. For free! 
@@ -29,8 +28,6 @@ Two of the most useful libraries are:
 Import `pandas` library and name it `pd` for ease of use. 
 
 The code to import the `numpy` library has already been written for you as an example.
-
-
 
 `@sample_code`
 ```{python}
@@ -60,7 +57,6 @@ xp: 100
 skills: 2
 key: 56c6ebec11
 ```
-
 Now that you have imported `pandas` library, we can focus on acquiring the data. This means pointing pandas to a data source, so it can transform it into a `Data Frame`. In very broad terms a Data Frame is simply a data structure with rows and columns or observations and variables (you can think of it as a spreadsheet).
 
 Pandas can import data from a variety of sources that include text files, databases, APIs and so on. For this particular project we will import a CSV (comma-separated value) file.
@@ -71,8 +67,6 @@ Pandas can import data from a variety of sources that include text files, databa
 2) Make sure you include the filename `mars_data`
 
 3) Assign the code to a variable `df` (abbreviation of Data Frame)
-
-`@hint`
 
 
 `@pre_exercise_code`
@@ -106,7 +100,6 @@ xp: 100
 skills: 2
 key: 713861b8dd
 ```
-
 Congratulations! You have just imported your data...
 
 ...or have you? To check your data we will use the `head()` and `tail()` methods.
@@ -119,8 +112,6 @@ To view the output of your actions in the console you will you use the `print()`
 The `head()` method has been written for you as an example (it returns 5 rows of data if you do not specify a number in the brackets).
 
 2) Wrap the code you write in a `print()` function "print out" the output
-
-`@hint`
 
 
 `@pre_exercise_code`
@@ -175,8 +166,6 @@ For now, review the glorious code you have written.
 
 `@instructions`
 Click `Submit Answer` once you are ready to proceed!
-
-`@hint`
 
 
 `@pre_exercise_code`

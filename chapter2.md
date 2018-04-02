@@ -116,7 +116,7 @@ skills: 2
 key: 0a8799887e
 ```
 
-Statistical analysis is great but sometimes a visualization can be an extremely powerful tool to understand the data quickly and effectively. For this purpose you will import an new library called `matplotlib`.
+Statistical analysis is great, but sometimes a visualization can be an extremely powerful tool to understand the data quickly and effectively. For this purpose you will import an new library called `matplotlib`.
 
 We will focus on understanding the distributions of our data by creating a histogram. This will help your statistical analysis in the upcoming chapter. 
 
@@ -172,9 +172,6 @@ success_msg("Great work! Note that your data is skewed. We will have to do somet
 ```
 
 
-
-
-
 ---
 ## Bring it all together
 
@@ -186,8 +183,9 @@ skills: 2
 key: 1f72e72c18
 ```
 
-Well done! You have
+Well done! Now you have a much better understanding of the Mars data. You achieved this by, firstly, having a high-level overview with the `info()` method. Then you explored the statistical features of the columns by using `describe()`. Finally, you visually examined the distribution of the values across multiple variables. 
 
+Remember, you found that the both, `age` and `lifetime_value` columns are skewed. This means that you will have to transform the values of these columns to effectively apply statistical methods. 
 
 
 `@pre_exercise_code`
@@ -209,8 +207,25 @@ plt.show()
 df['lifetime_value'].plot.hist()
 plt.show()
 ```
+`@solution`
+```{python}
+#Import the required modules
+import matplotlib.pyplot as plt
 
+df.info()
 
+df.describe()
+
+df['age'].plot.hist()
+plt.show()
+
+df['lifetime_value'].plot.hist()
+plt.show()
+```
+`@sct`
+```{python}
+Ex().has_equal_ast()
+success_msg("Let's march on to the final chapter!")
 
 
 
