@@ -47,11 +47,8 @@ import pandas as pd
 `@sct`
 ```{python}
 test_import("pandas", same_as = True)
+success_msg("Good job! The required libraries have been imported.")
 ```
-
-
-
-
 
 ---
 ## Import the data
@@ -95,10 +92,8 @@ df = pd.read_csv(mars_data)
 `@sct`
 ```{python}
 test_data_frame("df", columns=['zone','product','lifetime_value','age','home_planet'])
+success_msg("Nice! Now you have a dataset to work with.")
 ```
-
-
-
 
 
 ---
@@ -158,11 +153,8 @@ print(df.tail(10))
 `@sct`
 ```{python}
 Ex().has_equal_ast()
+success_msg("Great! Take some time to explore the outputs.")
 ```
-
-
-
-
 
 ---
 ## Bring it all together
@@ -200,7 +192,11 @@ df = pd.read_csv(mars_data)
 
 print(df.head())
 ```
-
+`@sct`
+```{python}
+Ex().has_equal_ast()
+success_msg("You have completed Chapter 1! Let's keep going.")
+```
 
 
 
