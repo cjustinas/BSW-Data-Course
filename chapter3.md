@@ -188,7 +188,7 @@ lang: python
 xp: 100
 skills: 2
 ```
-
+Now that the variables are transformed, it is time to give another shot at finding correlation between them. Since the distribution of the transformed variables is closer to a normal one, the assumption is that the correlation coeficient should improve.
 
 `@instructions`
 
@@ -282,7 +282,8 @@ plt.show()
 
 `@sct`
 ```{python}
-
+Ex().has_equal_ast()
+success_msg("Great! By transforming the variables, you were able to improve the coefficient from 0.228 to 0.329!"
 ```
 ---
 ## Bring it all together
@@ -319,5 +320,6 @@ skills: 2
 
 `@sct`
 ```{python}
-
+Ex().has_equal_ast()
+success_msg("Well done!")
 ```
