@@ -214,13 +214,13 @@ Now that the variables are transformed, it is time to give another shot at findi
 import pandas as pd
 import numpy as np
 df = pd.read_csv('https://assets.datacamp.com/production/repositories/2588/datasets/73d9f6626d0059203da53d733f5f781c4c9aed32/mars_data.csv')
-log_age = np.log(df['age'])
-log_value = np.log(df['lifetime_value'])
+df['log_age'] = np.log(df['age'])
+df['log_value'] = np.log(df['lifetime_value'])
 ```
 `@sample_code`
 ```{python}
 #Find the new correlation
-____ = log_value.____(log_age)
+____ = df['log_value'].____(df['log_age'])
 
 #Print out the result
 print(____)
@@ -228,7 +228,7 @@ print(____)
 `@solution`
 ```{python}
 #Find the new correlation
-new_correlation = log_value.corr(log_age)
+new_correlation = df['log_value'].corr(df['log_age'])
 
 #Print out the result
 print(new_correlation)
