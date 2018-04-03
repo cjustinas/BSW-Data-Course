@@ -339,7 +339,7 @@ import matplotlib.pyplot as plt
 ```{python}
 import seaborn as sns
 
-print(df['lifetime_value'].sum()
+print(df['lifetime_value'].sum())
 
 print(df['age'].corr(df['lifetime_value'])
 
@@ -355,7 +355,7 @@ plt.show()
 ```{python}
 import seaborn as sns
 
-print(df['lifetime_value'].sum()
+print(df['lifetime_value'].sum())
 
 print(df['age'].corr(df['lifetime_value'])
 
