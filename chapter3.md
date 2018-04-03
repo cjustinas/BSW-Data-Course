@@ -236,7 +236,7 @@ print(new_correlation)
 `@sct`
 ```{python}
 Ex().has_equal_ast()
-success_msg("Great! By transforming the variables, you were able to improve the coefficient from 0.228 to 0.329!")
+success_msg("Great! By transforming the variables, you were able to improve the coefficient from 0.2 to 0.329!")
 ```
 
 
