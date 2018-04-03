@@ -188,7 +188,7 @@ lang: python
 xp: 100
 skills: 2
 ```
-Now that the variables are transformed, it is time to give another shot at finding correlation between them. Since the distribution of the transformed variables is closer to a normal one, the assumption is that the correlation coeficient should improve.
+Now that the variables are transformed, it is time to give another shot at finding the correlation between them. Since the distribution of the transformed variables is closer to a normal one, the assumption is that the correlation coeficient should have greater accuracy. 
 
 `@instructions`
 
@@ -241,11 +241,17 @@ lang: python
 xp: 100
 skills: 2
 ```
+You have answered all the question your manager has asked you. Good job! 
 
+However, to demonstrate your excellence, you can go beyond the basic expectations. Why not provide a chart that visualises the correlation between `age` and `lifetime_value`? Your manager could use this in a presentation they are putting together.
 
 `@instructions`
 
-`@hint`
+1) Import `seaborn` library as `sns`
+
+2) Assign `log_age` as x and `log_value` as y
+
+3) Show the plot by using `show`
 
 `@pre_exercise_code`
 ```{python}
@@ -259,36 +265,38 @@ import matplotlib.pyplot as plt
 
 `@sample_code`
 ```{python}
+#Import Seaborn
 import seaborn as ____
 
+#Plot the correlation plot
+sns.lmplot(x=____, y=____, data=df)
 
-sns.lmplot(x='log_age', y='log_value', data=df)
-
-
+#Show the plot
 plt.____()
 
 ```
 
 `@solution`
 ```{python}
+#Import Seaborn
 import seaborn as sns
 
-
+#Plot the correlation plot
 sns.lmplot(x='log_age', y='log_value', data=df)
 
-
+#Show the plot
 plt.show()
 ```
 
 `@sct`
 ```{python}
 Ex().has_equal_ast()
-success_msg("Great! By transforming the variables, you were able to improve the coefficient from 0.228 to 0.329!"
+success_msg("Look at that! Your code has produced a beautiful visualisation that illustrates the relationship between the two variables!"
 ```
 ---
 ## Bring it all together
 
-This is it! You come a long way today. 
+This is it! You come a long way today. As SEB's Mars data analyst you have used `sum` to find the total value of transactions for the day and `corr()` to correalte variables. Not only that - you have changed the variabels with a `log()` transformation to reflect the statistical assumptions more closely. Lastly, you learned about `Seaborn` data visualisation library to produce a linear regression model chart. 
 
 ```yaml
 type: NormalExercise
@@ -298,24 +306,50 @@ xp: 100
 skills: 2
 ```
 
-
 `@instructions`
-
-`@hint`
+Click `Submit Answer` once you are ready to proceed!
 
 `@pre_exercise_code`
 ```{python}
-
+import pandas as pd
+import numpy as np
+df = pd.read_csv('https://assets.datacamp.com/production/repositories/2588/datasets/73d9f6626d0059203da53d733f5f781c4c9aed32/mars_data.csv')
+import matplotlib.pyplot as plt
 ```
 
 `@sample_code`
 ```{python}
+import seaborn as sns
+
+print(df['lifetime_value'].sum()
+
+print(df['age'].corr(df['lifetime_value'])
+
+df['log_age'] = np.log(df['age'])
+df['log_value'] = np.log(df['lifetime_value'])
+
+print(df['log_value'].corr(df['log_age'])
+
+sns.lmplot(x='log_age', y='log_value', data=df)
+plt.show()
 
 ```
 
 `@solution`
 ```{python}
+import seaborn as sns
 
+print(df['lifetime_value'].sum()
+
+print(df['age'].corr(df['lifetime_value'])
+
+df['log_age'] = np.log(df['age'])
+df['log_value'] = np.log(df['lifetime_value'])
+
+print(df['log_value'].corr(df['log_age'])
+
+sns.lmplot(x='log_age', y='log_value', data=df)
+plt.show()
 ```
 
 `@sct`

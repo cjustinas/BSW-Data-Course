@@ -187,6 +187,8 @@ Well done! Now you have a much better understanding of the Mars data. You achiev
 
 Remember, you found that the both, `age` and `lifetime_value` columns are skewed. This means that you will have to transform the values of these columns to effectively apply statistical methods. 
 
+`@instructions`
+Click `Submit Answer` once you are ready to proceed!
 
 `@pre_exercise_code`
 ```{python}
@@ -209,7 +211,6 @@ plt.show()
 ```
 `@solution`
 ```{python}
-#Import the required modules
 import matplotlib.pyplot as plt
 
 df.info()
