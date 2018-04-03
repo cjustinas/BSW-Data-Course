@@ -35,7 +35,7 @@ df = pd.read_csv('https://assets.datacamp.com/production/repositories/2588/datas
 `@sample_code`
 ```{python}
 #Calculate the total value
-____ = df['____'].____()
+____ = df[____].____()
 
 #Print out the results
 print(____)
@@ -111,6 +111,8 @@ Your preliminary analysis looks very pormising! However, do you remember when we
 
 Worry not! We can fix this by transforming the variables. To do this we will apply the numpy `log()` function to all the data points in the two columns. 
 
+Your collegue has supplied you with a sample visualision code to ilustrate the cahnges the transformations make. Take some time to review the output charts once you complete the instructions below. 
+
 ```yaml
 type: NormalExercise
 key: 7e71720519
@@ -121,7 +123,9 @@ skills: 2
 
 `@instructions`
 
-1) 
+1) Apply the `log()` function to the `age` column and assign the results to a new column called `log_age`
+
+2) Do the same for the `lifetime_value` column. Call the new column `log_value`
 
 `@pre_exercise_code`
 ```{python}
@@ -138,15 +142,16 @@ import matplotlib.pyplot as plt
 df['log_age'] = np.____(df['age'])
 
 #Transform the lifetime_value variable 
-df['log_value'] = np.____(df['lifetime_value'])
+df['____'] = np.log(df[____])
 
 #The code below will help you visualise the transformed variables
+plt.figure()
 sns.distplot(df['log_age'])
 plt.show()
 
+plt.figure()
 sns.distplot(df['log_value'])
 plt.show()
-
 ```
 
 `@solution`
@@ -170,6 +175,7 @@ plt.show()
 `@sct`
 ```{python}
 Ex().has_equal_ast()
+success_msg("The data will satisfy statistical inference assumptions much better now!")
 ```
 
 ---
