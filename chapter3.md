@@ -174,10 +174,6 @@ Ex().has_equal_ast()
 success_msg("The data will satisfy statistical inference assumptions much better now!")
 ```
 
-
-
-
-
 ---
 ## Find correlation between transformed variables
 
