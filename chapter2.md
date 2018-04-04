@@ -185,7 +185,7 @@ key: 1f72e72c18
 
 Well done! Now you have a much better understanding of the Mars data. You achieved this by, firstly, having a high-level overview with the `info()` method. Then you explored the statistical features of the columns by using `describe()`. Finally, you visually examined the distribution of the values across multiple variables. 
 
-Remember, you found that the both, `age` and `lifetime_value` columns are skewed. This means that you will have to transform the values of these columns to effectively apply statistical methods. 
+Remember, you found that the both, `age` and `lifetime_value` columns are skewed. This means that you will have to transform the values of these columns to effectively apply statistical methods. You will learn more about this in the next chapter.
 
 `@instructions`
 Click `Submit Answer` once you are ready to proceed!
