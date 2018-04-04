@@ -36,7 +36,7 @@ df = pd.read_csv('https://assets.datacamp.com/production/repositories/2588/datas
 `@sample_code`
 ```{python}
 #Calculate the total value
-____ = df[____].____
+____ = df['____'].____
 
 #Print out the results
 print(____)
@@ -140,7 +140,7 @@ import matplotlib.pyplot as plt
 df['log_age'] = np.____(df['age'])
 
 #Transform the lifetime_value variable 
-df[____] = np.log(df[____])
+df['____'] = np.log(df['____'])
 
 #The code below will help you visualise the transformed variables
 plt.figure()
@@ -267,7 +267,7 @@ import matplotlib.pyplot as plt
 import seaborn as ____
 
 #Plot the correlation plot
-sns.lmplot(x=____, y=____, data=df)
+sns.lmplot(x='____', y='____', data=df)
 
 #Show the plot
 ____
