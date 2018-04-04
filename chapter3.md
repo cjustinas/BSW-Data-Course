@@ -1,7 +1,7 @@
 ---
 title: Analyse the data
 description: >-
-  In this chapter you will work to do the main analysis work. This includes calculating the sum of a column, transforming data and finding correlation between variables.
+  In this chapter you will perform the main analysis work. This includes calculating the total sum of a column, transforming data and finding correlation between variables.
 
 
 ---
@@ -14,15 +14,14 @@ xp: 100
 skills: 2
 key: 108d33a707
 ```
-
 Now that you are familiar with the data, you can finally start exploring it in depth. 
 
-Your manager has asked to find the total value of all the transactions that took place during the day. You can do this by using the `.sum()` method on the `lifetime_value` column.
+Your manager has asked to find the total value of all the transactions on Mars that took place during the day. You can do this by using the `sum()` method on the `lifetime_value` column.
 
 `@instructions`
-1) Select the `'lifetime_value'` column of `df`
+1) Select the `lifetime_value` column of `df`
 
-2) Apply the `.sum()` method
+2) Apply the `sum()` method
 
 3) Assign the calculation to the variable `total_value`
 
@@ -37,7 +36,7 @@ df = pd.read_csv('https://assets.datacamp.com/production/repositories/2588/datas
 `@sample_code`
 ```{python}
 #Calculate the total value
-____ = df[____].____()
+____ = df[____].____
 
 #Print out the results
 print(____)
@@ -52,10 +51,6 @@ test_object('total_value')
 success_msg("Good work! You can now report a profit of $22005 for the day!")
 ```
 
-
-
-
-
 ---
 ## Find correlation between two variables
 
@@ -66,20 +61,16 @@ xp: 100
 skills: 2
 key: b8cf4b8501
 ```
-
-Your manager is convinced there is positive correlation between a customer's age and their lifetime value. This means that the independent variable of age influences the dependent variable of profit. In other words, the older the customer, the more profit the bank receives from doing business with them. This could happen for a variety of reasons. Your task is to explore the manager's hypothesis further. 
+Your manager is convinced there is positive correlation between customer's age and their lifetime value. This means that the independent variable of age influences the dependent variable of profit. In other words, the older the customer, the more profit the bank receives from doing business with them. This could happen for a variety of reasons. Your task is to explore the manager's hypothesis further. 
 
 We will use the `corr()` pandas function to see if your manager is right.
 
 `@instructions`
-1) Use the `corr()` function to find the correlation between `'age` and `lifetime_value'`
+1) Use the `corr()` function to find the correlation between `age` and `lifetime_value'`
 
 2) Assign the code to a variable `correlation`
 
 3) Print the new variable
-
-`@hint`
-
 
 `@pre_exercise_code`
 ```{python}
@@ -123,7 +114,7 @@ skills: 2
 key: 7e71720519
 ```
 
-Your preliminary analysis looks very promising! However, do you remember when we looked at the distribution of the data in Chapter 2? Both, the `age` and `lifetime_value` variables are skewed to the right and this is most definitely affecting out correlation findings. 
+Your preliminary analysis looks very promising! However, do you remember when we looked at the distribution of the data in Chapter 2? Both, the `age` and `lifetime_value` variables are skewed to the right and this is most definitely affecting our findings. 
 
 Worry not! We can fix this by transforming the variables. To do this we will apply the numpy `log()` function to all the data points in the two columns. 
 
@@ -133,8 +124,6 @@ Your collegue has supplied you with a sample visualization code to illustrate th
 1) Apply the `log()` function to the `age` column and assign the results to a new column called `log_age`
 
 2) Do the same for the `lifetime_value` column. Call the new column `log_value`
-
-`@hint`
 
 
 `@pre_exercise_code`
@@ -151,7 +140,7 @@ import matplotlib.pyplot as plt
 df['log_age'] = np.____(df['age'])
 
 #Transform the lifetime_value variable 
-df['____'] = np.log(df[____])
+df[____] = np.log(df[____])
 
 #The code below will help you visualise the transformed variables
 plt.figure()
@@ -249,18 +238,19 @@ xp: 100
 skills: 2
 key: 1d3c536bd7
 ```
+
 You have answered all the question your manager has asked you. Good job! 
 
 However, to demonstrate your excellence, you can go beyond the basic expectations. Why not provide a chart that visualizes the correlation between `age` and `lifetime_value`? Your manager could use this in a presentation they are putting together.
 
-To do this you will use `seaborn` data visualization library. It is similar to `matplotlib`, but the visuals are more impressive! 
+To do this you will use the `seaborn` data visualization library. It is similar to `matplotlib`, but the visuals are more impressive! 
 
 `@instructions`
 1) Import `seaborn` library as `sns`
 
-2) Assign `log_age` as x and `log_value` as y
+2) Assign `log_age` as x and `log_value` as y values
 
-3) Show the plot by using `show`
+3) Show the plot by using `plt.show()`
 
 `@pre_exercise_code`
 ```{python}
@@ -280,7 +270,7 @@ import seaborn as ____
 sns.lmplot(x=____, y=____, data=df)
 
 #Show the plot
-plt.____()
+____
 ```
 `@solution`
 ```{python}
@@ -310,10 +300,10 @@ skills: 2
 key: efa8b20bb4
 ```
 
-This is it! You come a long way today. As SEB's Mars data analyst you have used `sum` to find the total value of transactions for the day and `corr()` to correlate variables. Not only that - you have changed the variables with a `log()` transformation to reflect the statistical assumptions more closely. Lastly, you learned about `Seaborn` data visualization library to produce a linear regression model chart.
+This is it! You come a long way today. As SEB's Mars data analyst you have used `sum()` to find the total value of transactions for the day and `corr()` to correlate variables. Not only that - you have changed the variables with a `log()` transformation to reflect the statistical assumptions more closely. Lastly, you learned about `Seaborn` data visualization library to produce a linear regression model chart.
 
 `@instructions`
-Click `Submit Answer` once you are ready to proceed!
+Click `Submit Answer` once you are ready to finish the course
 
 `@pre_exercise_code`
 ```{python}
@@ -326,14 +316,14 @@ import matplotlib.pyplot as plt
 ```{python}
 import seaborn as sns
 
-print(df['lifetime_value'].sum())
+print('Total value is:', df['lifetime_value'].sum())
 
-print(df['age'].corr(df['lifetime_value'])
+print('First correlation:', df['age'].corr(df['lifetime_value']))
 
 df['log_age'] = np.log(df['age'])
 df['log_value'] = np.log(df['lifetime_value'])
 
-print(df['log_value'].corr(df['log_age'])
+print('Correlation with transformed variables:', df['log_value'].corr(df['log_age']))
 
 sns.lmplot(x='log_age', y='log_value', data=df)
 plt.show()
@@ -342,14 +332,14 @@ plt.show()
 ```{python}
 import seaborn as sns
 
-print(df['lifetime_value'].sum())
+print('Total value is:', df['lifetime_value'].sum())
 
-print(df['age'].corr(df['lifetime_value'])
+print('First correlation:', df['age'].corr(df['lifetime_value']))
 
 df['log_age'] = np.log(df['age'])
 df['log_value'] = np.log(df['lifetime_value'])
 
-print(df['log_value'].corr(df['log_age'])
+print('Correlation with transformed variables:', df['log_value'].corr(df['log_age']))
 
 sns.lmplot(x='log_age', y='log_value', data=df)
 plt.show()
@@ -359,7 +349,4 @@ plt.show()
 Ex().has_equal_ast()
 success_msg("Well done!")
 ```
-
-
-
 
