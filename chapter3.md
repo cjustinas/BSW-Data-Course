@@ -316,9 +316,6 @@ This is it! You come a long way today. As SEB's Mars data analyst you have used 
 `@instructions`
 Click `Submit Answer` once you are ready to proceed!
 
-`@hint`
-
-
 `@pre_exercise_code`
 ```{python}
 import pandas as pd
