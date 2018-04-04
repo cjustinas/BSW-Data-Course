@@ -178,6 +178,14 @@ df = pd.read_csv(mars_data)
 
 print(df.head())
 ```
+`@solution`
+```{python}
+import pandas as pd
+
+df = pd.read_csv(mars_data)
+
+print(df.head())
+```
 `@sct`
 ```{python}
 Ex().has_equal_ast()
