@@ -239,10 +239,6 @@ Ex().has_equal_ast()
 success_msg("Great! By transforming the variables, you were able to improve the coefficient from 0.2 to 0.329!")
 ```
 
-
-
-
-
 ---
 ## Visualise the correlation
 
@@ -258,15 +254,14 @@ You have answered all the question your manager has asked you. Good job!
 
 However, to demonstrate your excellence, you can go beyond the basic expectations. Why not provide a chart that visualizes the correlation between `age` and `lifetime_value`? Your manager could use this in a presentation they are putting together.
 
+To do this you will use the `seaborn` data visualization library. It is similar to `matplotlib`, but the visuals are more impressive! 
+
 `@instructions`
 1) Import `seaborn` library as `sns`
 
 2) Assign `log_age` as x and `log_value` as y
 
 3) Show the plot by using `show`
-
-`@hint`
-
 
 `@pre_exercise_code`
 ```{python}
@@ -304,10 +299,6 @@ plt.show()
 Ex().has_equal_ast()
 success_msg("Look at that! Your code has produced a beautiful visualization that illustrates the relationship between the two variables!")
 ```
-
-
-
-
 
 ---
 ## Bring it all together
