@@ -249,12 +249,11 @@ xp: 100
 skills: 2
 key: 1d3c536bd7
 ```
-
 You have answered all the question your manager has asked you. Good job! 
 
 However, to demonstrate your excellence, you can go beyond the basic expectations. Why not provide a chart that visualizes the correlation between `age` and `lifetime_value`? Your manager could use this in a presentation they are putting together.
 
-To do this you will use the `seaborn` data visualization library. It is similar to `matplotlib`, but the visuals are more impressive! 
+To do this you will use `seaborn` data visualization library. It is similar to `matplotlib`, but the visuals are more impressive! 
 
 `@instructions`
 1) Import `seaborn` library as `sns`
