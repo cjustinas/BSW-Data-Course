@@ -229,7 +229,7 @@ success_msg("Great! By transforming the variables, you were able to improve the 
 ```
 
 ---
-## Visualise the correlation
+## Visualize the correlation
 
 ```yaml
 type: NormalExercise
