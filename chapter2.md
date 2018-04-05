@@ -62,7 +62,7 @@ The `info()` method has given you some high-level insight into the dataset as a 
 
 What about some statistical description of the individual columns? For this purpose we will use the `describe()`method.
 
-This time you will use a variable to store the code. A variable is like a container that converts lengthy code into a short character string. 
+This time you will use a variable to store the code. A variable is like a container that converts lengthy code into a short character string. You have already defined a variable before by creating `df` DataFrame.
 
 Make sure you print the variable and take some time to interpret the output.
 

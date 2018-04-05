@@ -56,7 +56,7 @@ xp: 100
 skills: 2
 key: 56c6ebec11
 ```
-Now that you have imported `pandas` library, we can focus on acquiring the data. This means pointing pandas to a data source, so it can transform it into a `Data Frame`. In very broad terms a Data Frame is simply a data structure with observations and variables (you can think of it as a spreadsheet with rows and columns).
+Now that you have imported `pandas` library, we can focus on acquiring the data. This means pointing pandas to a data source, so it can transform it into a `Data Frame`. In very broad terms a DataFrame is simply a data structure with observations and variables (you can think of it as a spreadsheet with rows and columns).
 
 Pandas can import data from a variety of sources that include text files, databases, APIs and so on. For this particular project we will import a CSV (comma-separated value) file.
 
@@ -65,7 +65,7 @@ Pandas can import data from a variety of sources that include text files, databa
 
 2) Make sure you include the filename `mars_data`
 
-3) Assign the code to a variable `df` (abbreviation of Data Frame)
+3) Assign the code to a variable `df` (abbreviation of DataFrame)
 
 
 `@pre_exercise_code`
@@ -129,10 +129,10 @@ ____(df.____(____))
 ```
 `@solution`
 ```{python}
-#Check the first 5 rows of the DataFrame
+#Check the first 5 rows of the DataFrame (nothing will be displayed)
 df.head()
 
-#Check and print the first 5 rows of the DataFrame
+#Check and print the first 5 rows of the DataFrame (output will be displayed in the console)
 print(df.head())
 
 #Check the last 10 rows of the DataFrame
