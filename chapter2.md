@@ -69,7 +69,7 @@ Make sure you print the variable and take some time to interpret the output.
 `@instructions`
 1) Use the `describe()` method on `df`
 
-2) Assign your code to a variable `description`
+2) Assign your code to a variable called `description`
 
 3) Print out the variable `description`
 
@@ -116,7 +116,7 @@ skills: 2
 key: 0a8799887e
 ```
 
-Statistical analysis is great, but sometimes a visualization can be an extremely powerful tool to understand the data quickly and effectively. For this purpose you will import an new library called `matplotlib`.
+Statistical analysis is great, but sometimes a visualization can be an extremely powerful tool to understand the data quickly and effectively. For this purpose you will import a new library called `matplotlib`.
 
 We will focus on understanding the distributions of our data by creating a histogram. This will help your statistical analysis in the upcoming chapter. 
 
@@ -125,11 +125,11 @@ After you submit the exercises, let's take some time to interpret the results.
 `@instructions`
 1) Import the `matplotlib.pyplot` library as `plt`
 
-2) Create a histogram of the `age` variable by using `hist`
+2) Create a histogram of the `lifetime_value` variable by using `hist()`
 
-3) Create a histogram of the `lifetime_value` variable by using `hist`
+A histogram of the `age` variable has already been created for you as an example. 
 
-4) Display the histogram by using `plt.show()`
+3) Display the histogram by using `plt.show()`
 
 `@hint`
 
@@ -144,11 +144,11 @@ df = pd.read_csv('https://assets.datacamp.com/production/repositories/2588/datas
 #Import the required modules
 import matplotlib.pyplot as ____
 
-#Create a histogram to show the distribution of age variable
-df['____'].plot.____()
+#A histogram to show the distribution of the age variable
+df['age'].plot.hist()
 plt.show()
 
-#Create a histogram to show the distribution of lifetime value variable 
+#Create a histogram to show the distribution of the lifetime value variable 
 df['____'].plot.____()
 ____
 ```
@@ -168,7 +168,7 @@ plt.show()
 `@sct`
 ```{python}
 Ex().has_equal_ast()
-success_msg("Great work! Note that your data is skewed. We will have to do something about this in the future exercises")
+success_msg("Great work! Note that your data is right skewed - the distribution plots are asymmetrical, with long tails stretching to the right. We will have to do something about this in the future exercises.")
 ```
 
 
@@ -183,9 +183,9 @@ skills: 2
 key: 1f72e72c18
 ```
 
-Well done! Now you have a much better understanding of the Mars data. You achieved this by, firstly, having a high-level overview with the `info()` method. Then you explored the statistical features of the columns by using `describe()`. Finally, you visually examined the distribution of the values across multiple variables. 
+Well done! Now you have a much better understanding of the Mars Banking data. You achieved this by, firstly, having a high-level overview with the `info()` method. Then you explored the statistical features of the columns by using `describe()`. Finally, you visually examined the distribution of the values across multiple variables. 
 
-Remember, you found that the both, `age` and `lifetime_value` columns are skewed. This means that you will have to transform the values of these columns to effectively apply statistical methods. You will learn more about this in the next chapter.
+Remember, you found that both `age` and `lifetime_value` columns are right skewed. This means that you will have to transform the values of these columns to effectively apply statistical methods. You will learn more about this in the next chapter.
 
 `@instructions`
 Click `Submit Answer` once you are ready to proceed!
