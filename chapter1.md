@@ -108,7 +108,7 @@ To view the output of your actions in the console you will you use the `print()`
 
 The `head()` method has been written for you as an example (it returns 5 rows of data if you do not specify a number in the brackets).
 
-2) Wrap the code you write in a `print()` function "print out" the output
+2) Wrap the code you write in a `print()` function to "print out" the output
 
 
 `@pre_exercise_code`
