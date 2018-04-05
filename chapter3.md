@@ -300,7 +300,7 @@ skills: 2
 key: efa8b20bb4
 ```
 
-This is it! You come a long way today. As SEB's Mars data analyst you have used `sum()` to find the total value of transactions for the day and `corr()` to correlate variables. Not only that - you have changed the variables with a `log()` transformation to reflect the statistical assumptions more closely. Lastly, you learned about `Seaborn` data visualization library to produce a linear regression model chart.
+This is it! You came a long way today. As SEB's Mars data analyst you have used `sum()` to find the total value of transactions for the day and `corr()` to correlate variables. Not only that - you have changed the variables with a `log()` transformation to reflect the statistical assumptions more closely. Lastly, you learned about `Seaborn` data visualization library to produce a linear regression model chart.
 
 `@instructions`
 Click `Submit Answer` once you are ready to finish the course
