@@ -56,7 +56,7 @@ xp: 100
 skills: 2
 key: 56c6ebec11
 ```
-Now that you have imported `pandas` library, we can focus on acquiring the data. This means pointing pandas to a data source, so it can transform it into a `Data Frame`. In very broad terms a Data Frame is simply a data structure with rows and columns or observations and variables (you can think of it as a spreadsheet).
+Now that you have imported `pandas` library, we can focus on acquiring the data. This means pointing pandas to a data source, so it can transform it into a `Data Frame`. In very broad terms a Data Frame is simply a data structure with observations and variables (you can think of it as a spreadsheet with rows and columns).
 
 Pandas can import data from a variety of sources that include text files, databases, APIs and so on. For this particular project we will import a CSV (comma-separated value) file.
 
