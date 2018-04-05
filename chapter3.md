@@ -140,9 +140,6 @@ Your collegue has supplied you with a sample visualization code to illustrate th
 
 2) Do the same for the `lifetime_value` column. Call the new column `log_value`
 
-`@hint`
-
-
 `@pre_exercise_code`
 ```{python}
 import pandas as pd
@@ -214,9 +211,6 @@ Now that the variables are transformed, it is time to give another shot at findi
 2) Assign the code to the variable `new_correlation`
 
 3) Print the newly assigned variable
-
-`@hint`
-
 
 `@pre_exercise_code`
 ```{python}
