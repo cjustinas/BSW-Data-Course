@@ -155,7 +155,7 @@ skills: 2
 key: 689f678c19
 ```
 
-You have made good progress so far. Not only have you learned about the importance of libraries, but also imported the data for the upcoming analysis and checked if the import has been successful. Lastly, you learned about the very common print function. At this rate you will become an experienced data analyst in no time!
+You have made good progress so far. Not only have you learned about the importance of libraries, but also imported the data for the upcoming analysis and checked if the import has been successful by using `tail()`. Lastly, you learned about the very common `print()` function. At this rate you will become an experienced data analyst in no time!
 
 We also briefly touched upon variables by defining `df`. But more on that in the upcoming exercises...
 
