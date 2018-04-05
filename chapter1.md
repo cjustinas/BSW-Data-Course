@@ -14,6 +14,7 @@ xp: 100
 skills: 2
 key: 286ddf980c
 ```
+
 `Libraries` are collections of code that have been written by other developers and packaged for anyone to use.
 
 Imagine libraries as tools for building a house - you would not make your own hammer, nails and bricks, but rather buy these items in a shop. Similarly, libraries equip you with useful code that can be easily reused. For free! 
@@ -28,6 +29,8 @@ Two of the most useful libraries are:
 Import `pandas` library and name it `pd` for ease of use. 
 
 The code to import the `numpy` library has already been written for you as an example.
+
+
 
 `@sample_code`
 ```{python}
@@ -46,6 +49,11 @@ import pandas as pd
 test_import("pandas", same_as = True)
 success_msg("Good job! The required libraries have been imported.")
 ```
+
+
+
+
+
 ---
 ## Import the data
 
@@ -56,7 +64,8 @@ xp: 100
 skills: 2
 key: 56c6ebec11
 ```
-Now that you have imported `pandas` library, we can focus on acquiring the data. This means pointing pandas to a data source, so it can transform it into a `Data Frame`. In very broad terms a DataFrame is simply a data structure with observations and variables (you can think of it as a spreadsheet with rows and columns).
+
+Now that you have imported `pandas` library, we can focus on acquiring the data. This means pointing pandas to a data source, so it can transform it into a `DataFrame`. In very broad terms a DataFrame is simply a data structure with observations and variables (you can think of it as a spreadsheet with rows and columns).
 
 Pandas can import data from a variety of sources that include text files, databases, APIs and so on. For this particular project we will import a CSV (comma-separated value) file.
 
@@ -66,6 +75,8 @@ Pandas can import data from a variety of sources that include text files, databa
 2) Make sure you include the filename `mars_data`
 
 3) Assign the code to a variable `df` (abbreviation of DataFrame)
+
+`@hint`
 
 
 `@pre_exercise_code`
@@ -87,6 +98,11 @@ df = pd.read_csv(mars_data)
 test_data_frame("df", columns=['zone','product','lifetime_value','age','home_planet'])
 success_msg("Nice! Now you have a dataset to work with.")
 ```
+
+
+
+
+
 ---
 ## Check your data
 
@@ -97,6 +113,7 @@ xp: 100
 skills: 2
 key: 713861b8dd
 ```
+
 Congratulations! You have just imported your data...
 
 ...or have you? To check your data we will use the `head()` and `tail()` methods.
@@ -109,6 +126,8 @@ To view the output of your actions in the console you will you use the `print()`
 The `head()` method has been written for you as an example (it returns 5 rows of data if you do not specify a number in the brackets).
 
 2) Wrap the code you write in a `print()` function to "print out" the output
+
+`@hint`
 
 
 `@pre_exercise_code`
@@ -144,6 +163,10 @@ Ex().has_equal_ast()
 success_msg("Great! Take some time to explore the outputs.")
 ```
 
+
+
+
+
 ---
 ## Bring it all together
 
@@ -163,6 +186,8 @@ For now, review the glorious code you have written.
 
 `@instructions`
 Click `Submit Answer` once you are ready to proceed!
+
+`@hint`
 
 
 `@pre_exercise_code`
@@ -191,3 +216,7 @@ print(df.head())
 Ex().has_equal_ast()
 success_msg("You have completed Chapter 1! Let's keep going.")
 ```
+
+
+
+

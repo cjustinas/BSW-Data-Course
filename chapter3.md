@@ -14,6 +14,7 @@ xp: 100
 skills: 2
 key: 108d33a707
 ```
+
 Now that you are familiar with the data, you can finally start exploring it in depth. 
 
 Your manager has asked to find the total value of all the transactions on Mars that took place during the day. You can do this by using the `sum()` method on the `lifetime_value` column.
@@ -26,6 +27,8 @@ Your manager has asked to find the total value of all the transactions on Mars t
 3) Assign the calculation to the variable `total_value`
 
 4) Print the results
+
+`@hint`
 
 
 `@pre_exercise_code`
@@ -51,6 +54,10 @@ test_object('total_value')
 success_msg("Good work! You can now report a profit of $22005 for the day!")
 ```
 
+
+
+
+
 ---
 ## Find correlation between two variables
 
@@ -61,6 +68,7 @@ xp: 100
 skills: 2
 key: b8cf4b8501
 ```
+
 Your manager is convinced there is positive correlation between customer's age and their lifetime value. This means that the independent variable of age influences the dependent variable of profit. In other words, the older the customer, the more profit the bank receives from doing business with them. 
 
 This dependency could exist for a variety of reasons. Also, correlation does not always mean causation, but the relationship is interesting to explore nonetheless.
@@ -75,6 +83,9 @@ We will use the `corr()` pandas function to see if your manager is right.
 2) Assign the code to a variable `correlation`
 
 3) Print the new variable
+
+`@hint`
+
 
 `@pre_exercise_code`
 ```{python}
@@ -129,6 +140,8 @@ Your collegue has supplied you with a sample visualization code to illustrate th
 
 2) Do the same for the `lifetime_value` column. Call the new column `log_value`
 
+`@hint`
+
 
 `@pre_exercise_code`
 ```{python}
@@ -178,6 +191,10 @@ Ex().has_equal_ast()
 success_msg("The data will satisfy statistical inference assumptions much better now!")
 ```
 
+
+
+
+
 ---
 ## Find correlation between transformed variables
 
@@ -197,6 +214,9 @@ Now that the variables are transformed, it is time to give another shot at findi
 2) Assign the code to the variable `new_correlation`
 
 3) Print the newly assigned variable
+
+`@hint`
+
 
 `@pre_exercise_code`
 ```{python}
@@ -228,6 +248,10 @@ Ex().has_equal_ast()
 success_msg("Great! By transforming the variables, you were able to improve the coefficient from 0.2 to 0.329!")
 ```
 
+
+
+
+
 ---
 ## Visualize the correlation
 
@@ -243,7 +267,7 @@ You have answered all the question your manager has asked you. Good job!
 
 However, to demonstrate your excellence, you can go beyond the basic expectations. Why not provide a chart that visualizes the correlation between `age` and `lifetime_value`? Your manager could use this in a presentation they are putting together.
 
-To do this you will use the `seaborn` data visualization library. It is similar to `matplotlib`, but the visuals are more impressive! 
+To do this you will use the `seaborn` data visualization library. It is similar to `matplotlib`, but the visuals are more impressive!
 
 `@instructions`
 1) Import `seaborn` library as `sns`
@@ -251,6 +275,9 @@ To do this you will use the `seaborn` data visualization library. It is similar 
 2) Assign `log_age` as x and `log_value` as y values
 
 3) Show the plot by using `plt.show()`
+
+`@hint`
+
 
 `@pre_exercise_code`
 ```{python}
@@ -266,7 +293,7 @@ import matplotlib.pyplot as plt
 #Import Seaborn
 import seaborn as ____
 
-#Plot the correlation plot
+#Plot the correlation
 sns.lmplot(x='____', y='____', data=df)
 
 #Show the plot
@@ -277,7 +304,7 @@ ____
 #Import Seaborn
 import seaborn as sns
 
-#Plot the correlation plot
+#Plot the correlation
 sns.lmplot(x='log_age', y='log_value', data=df)
 
 #Show the plot
@@ -288,6 +315,10 @@ plt.show()
 Ex().has_equal_ast()
 success_msg("Look at that! Your code has produced a beautiful visualization that illustrates the relationship between the two variables!")
 ```
+
+
+
+
 
 ---
 ## Bring it all together
@@ -304,6 +335,9 @@ This is it! You came a long way today. As SEB's Mars data analyst you have used 
 
 `@instructions`
 Click `Submit Answer` once you are ready to finish the course
+
+`@hint`
+
 
 `@pre_exercise_code`
 ```{python}
@@ -349,4 +383,7 @@ plt.show()
 Ex().has_equal_ast()
 success_msg("Well done!")
 ```
+
+
+
 

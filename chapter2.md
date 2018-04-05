@@ -22,6 +22,8 @@ After you submit the solution, take some time to read the success message that w
 `@instructions`
 Use the `info()` method on `df`
 
+`@hint`
+
 
 `@pre_exercise_code`
 ```{python}
@@ -72,6 +74,8 @@ Make sure you print the variable and take some time to interpret the output.
 2) Assign your code to a variable called `description`
 
 3) Print out the variable `description`
+
+`@hint`
 
 
 `@pre_exercise_code`
@@ -172,6 +176,9 @@ success_msg("Great work! Note that your data is right skewed - the distribution 
 ```
 
 
+
+
+
 ---
 ## Bring it all together
 
@@ -189,6 +196,9 @@ Remember, you found that both `age` and `lifetime_value` columns are right skewe
 
 `@instructions`
 Click `Submit Answer` once you are ready to proceed!
+
+`@hint`
+
 
 `@pre_exercise_code`
 ```{python}
@@ -227,6 +237,7 @@ plt.show()
 ```{python}
 Ex().has_equal_ast()
 success_msg("Let's march on to the final chapter!")
+```
 
 
 
