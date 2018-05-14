@@ -177,7 +177,7 @@ Now comes the fun part! You need to initialize a Decision Tree model and pass th
 Note that you are also passing the dependent variables labels with `y_train`. This means that you are solving a `supervised learning` problem. 
 
 `@instructions`
-1) Use the `DecisionTreeClassifer` to initiate the model. Make sure to set `random_state` variable to `42` (so the results are always the same). This will be assigned to the variable `dt`
+1) Use the `DecisionTreeClassifer` to initiate the model. This will be assigned to the variable `dt`
 
 2) Use the `fit` method on `dt` and pass the training variables, so that your model can learn
 
@@ -196,7 +196,7 @@ x_train, x_test, y_train, y_test = train_test_split(x,y,test_size=0.2)
 `@sample_code`
 ```{python}
 #Initiate the model
-dt = ____(random_state=____)
+dt = ____()
 
 #Fit the model around the training variables
 dt.____(x_train, y_train)
@@ -206,7 +206,7 @@ dt.____(x_train, y_train)
 `@solution`
 ```{python}
 #Initiate the model
-dt = DecisionTreeClassifier(random_state=42)
+dt = DecisionTreeClassifier()
 
 #Fit the model around the training variables
 dt.fit(x_train, y_train)
@@ -329,7 +329,7 @@ x = df.drop(['home_planet'], axis=1)
 y = df['home_planet']
 x_train, x_test, y_train, y_test = train_test_split(x,y,test_size=0.2)
 
-dt = DecisionTreeClassifier(random_state=42)
+dt = DecisionTreeClassifier()
 dt.fit(x_train, y_train)
 predictions = dt.predict(x_test)
 
