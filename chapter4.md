@@ -1,6 +1,6 @@
 ---
 title       : Introduction to Machine Learning
-description : In this final chapter you will get a taste of the all-powerful Machine Learning. You will learn how to preprocess your data and apply a Decision Tree algorithm to predict the home planet of a given customer.  
+description : This final chapter will give you a taste of the all-powerful Machine Learning. You will learn how to preprocess your data and apply a Decision Tree algorithm to predict the home planet of a given customer.  
 ---
 ## Import libraries for Machine Learning
 
@@ -247,7 +247,7 @@ df = pd.read_csv('https://assets.datacamp.com/production/repositories/2588/datas
 x = df.drop(['home_planet'], axis=1)
 y = df['home_planet']
 x_train, x_test, y_train, y_test = train_test_split(x,y,test_size=0.2)
-dt = DecisionTreeClassifier()
+dt = DecisionTreeClassifier(random_state=42)
 dt.fit(x_train, y_train)
 
 ```
@@ -274,7 +274,7 @@ print(accuracy_score(y_test,predictions))
 `@sct`
 ```{python}
 Ex().has_equal_ast()
-success_msg("Awesome work! Your model predicted well, but clearly could achieve better results with better optimization.")
+success_msg("Awesome work! Your model predicted well, but clearly could achieve better results by better optimization.")
 ```
 
 ---
@@ -311,7 +311,7 @@ x = df.drop(['home_planet'], axis=1)
 y = df['home_planet']
 x_train, x_test, y_train, y_test = train_test_split(x,y,test_size=0.2)
 
-dt = DecisionTreeClassifier()
+dt = DecisionTreeClassifier(random_state=42)
 dt.fit(x_train, y_train)
 predictions = dt.predict(x_test)
 
