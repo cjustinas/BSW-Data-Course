@@ -224,10 +224,10 @@ def ____(x):
         return ____
 
 #Apply the function to your data         
-df['new_zones'] = df.zone.apply(____)
+df['new_zone'] = df['zone'].____(zone_change)
 
 #Display the data
-df.head()
+print(df.head())
 ```
 
 `@solution`
@@ -244,16 +244,16 @@ def zone_change(x):
         return 3
 
 #Apply the function to your data        
-df['new_zones'] = df.zone.apply(zone_change)
+df['new_zone'] = df['zone'].apply(zone_change)
 
 #Display the data 
-df.head()
+print(df.head())
 ```
 
 `@sct`
 ```{python}
 Ex().has_equal_ast()
-success_msg("Good job! The 'new_zones' column now reflects the true state of the data!")
+success_msg("Good job! The new column now reflects the true state of the data!")
 ```
 ---
 ## Bring it all together
