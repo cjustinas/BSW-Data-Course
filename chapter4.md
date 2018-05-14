@@ -274,7 +274,7 @@ print(accuracy_score(y_test,predictions))
 `@sct`
 ```{python}
 Ex().has_equal_ast()
-success_msg("Awesome work! Your model predicted well, but clearly could achieve better results by better optimization.")
+success_msg("Awesome work! Your model predicted well, but clearly could achieve better results with better optimization.")
 ```
 
 ---
