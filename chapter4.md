@@ -32,26 +32,26 @@ The code to import the `train_test_split` functions has already been written for
 
 `@sample_code`
 ```{python}
-# Import function to divide your data into training and learning parts from the cross_validation module of sklearn library
+#Import function to divide your data into training and learning parts from the cross_validation module of sklearn library
 from sklearn.cross_validation import train_test_split
 
-# Import the Decision Tree algorithm from the tree module
+#Import the Decision Tree algorithm from the tree module
 from sklearn.____ import ____
 
-# Import function to test the accuracy of your prediction
+#Import function to test the accuracy of your prediction
 from ____.____ import ____
 
 ```
 
 `@solution`
 ```{python}
-# Import function to divide your data into training and learning parts
+#Import function to divide your data into training and learning parts
 from sklearn.cross_validation import train_test_split
 
-# Import the Decision Tree algorithm
+#Import the Decision Tree algorithm
 from sklearn.tree import DecisionTreeClassifier 
 
-# Import function to test the accuracy of your prediction
+#Import function to test the accuracy of your prediction
 from sklearn.metrics import accuracy_score
 
 ```
@@ -196,7 +196,7 @@ x_train, x_test, y_train, y_test = train_test_split(x,y,test_size=0.2)
 #Initiate the model
 dt = ____(random_state=____)
 
-# Fit the model around the training variables
+#Fit the model around the training variables
 dt.____(x_train, y_train)
 
 ```
@@ -206,7 +206,7 @@ dt.____(x_train, y_train)
 #Initiate the model
 dt = DecisionTreeClassifier(random_state=42)
 
-# Fit the model around the training variables
+#Fit the model around the training variables
 dt.fit(x_train, y_train)
 ```
 
@@ -250,20 +250,20 @@ dt.fit(x_train, y_train)
 
 `@sample_code`
 ```{python}
-# Make predictions using the model you developed
+#Make predictions using the model you developed
 predictions = dt.____(x_test)
 
-# Test the accuracy of your model
+#Test the accuracy of your model
 print(____(y_test,predictions))
 
 ```
 
 `@solution`
 ```{python}
-# Make predictions using the model you developed
+#Make predictions using the model you developed
 predictions = dt.predict(x_test)
 
-# Test the accuracy of your model
+#Test the accuracy of your model
 print(accuracy_score(y_test,predictions))
 ```
 
