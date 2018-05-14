@@ -70,7 +70,7 @@ lang: python
 xp: 100
 skills: 2
 ```
-The first task is to devide your data into two sets: one containing the dependent varaible that you want to predict, the other containing the features that will be used to predict the class of the dependent variable. 
+The second task is to devide your data into two sets: one containing the dependent varaible that you want to predict, the other containing the features that will be used to predict the class of the dependent variable. 
 
 `@instructions`
 1) Use the `drop` method on your data to delete the `home_planet` column. This will be assigned to the variable `x`
