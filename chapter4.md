@@ -172,9 +172,9 @@ lang: python
 xp: 100
 skills: 2
 ```
-Now comes the fun part! You need to initialize a Decision Tree model and pass the training data to it, so it can learn the relavant features.
+Now comes the fun part! You need to initialize a Decision Tree model and pass the training data to it, so it can learn the relevant features.
 
-Note taht you are also passing the dependiant variables labels with `y_train`. This means that you are solving a `supervised learning` problem. 
+Note that you are also passing the dependent variables labels with `y_train`. This means that you are solving a `supervised learning` problem. 
 
 `@instructions`
 1) Use the `DecisionTreeClassifer` to initiate the model. Make sure to set `random_state` variable to `42` (so the results are always the same). This will be assigned to the variable `dt`
