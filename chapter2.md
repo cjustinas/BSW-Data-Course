@@ -175,10 +175,86 @@ Ex().has_equal_ast()
 success_msg("Great work! Note that your data is right skewed - the distribution plots are asymmetrical, with long tails stretching to the right. We will have to do something about this in the future exercises.")
 ```
 
+---
+## Write a function to fix the data
 
+```yaml
+type: NormalExercise
+key: f350c11c21
+lang: python
+xp: 100
+skills: 2
+```
+Oh no! Your colleague has just informed you that an error has been spotted in the backend processes of the bank. This error has led to transaction zones being mixed up. For example, zone 1 should have been labeled as zone 2, zone 3 as 4 and so on:
 
+`Zone 1 --> 2`
+`Zone 2 --> 1`
+`Zone 3 --> 4`
+`Zone 4 --> 3`
 
+To mitigate this issue in your data you can define a function! With the right instructions, it will fix the problem quickly. 
 
+`@instructions`
+
+1) Define a new function called `zone_change`
+
+2) Assign the correct zones
+
+3) Use the `apply` method on the `zone` column of `df` and assign the results to a new column called `new_zones`
+ 
+`@hint`
+
+`@pre_exercise_code`
+```{python}
+import pandas as pd
+df = pd.read_csv('https://assets.datacamp.com/production/repositories/2588/datasets/e8c7de0372cfe29b1be7bad2b16e28e2e9a56d01/mars_data.csv')
+```
+
+`@sample_code`
+```{python}
+#Define a function that will replace the values
+def ____(x):
+    if x == 1:
+        return 2
+    if x == 2:
+        return ____
+    if x == 3:
+        return ____
+    if x == 4:
+        return ____
+
+#Apply the function to your data         
+df['new_zones'] = df.zone.apply(____)
+
+#Display the data
+df.head()
+```
+
+`@solution`
+```{python}
+#Define a function that will replace the values
+def zone_change(x):
+    if x == 1:
+        return 2
+    if x == 2:
+        return 1
+    if x == 3:
+        return 4
+    if x == 4:
+        return 3
+
+#Apply the function to your data        
+df['new_zones'] = df.zone.apply(zone_change)
+
+#Display the data 
+df.head()
+```
+
+`@sct`
+```{python}
+Ex().has_equal_ast()
+success_msg("Good job! The 'new_zones' column now reflects the true state of the data!")
+```
 ---
 ## Bring it all together
 
@@ -194,10 +270,10 @@ Well done! Now you have a much better understanding of the Mars Banking data. Yo
 
 Remember, you found that both `age` and `lifetime_value` columns are right skewed. This means that you will have to transform the values of these columns to effectively apply statistical methods. You will learn more about this in the next chapter.
 
+You also engaged in some data engineering by creating a new column with transaction zone values fixed. 
+
 `@instructions`
 Click `Submit Answer` once you are ready to proceed!
-
-`@hint`
 
 
 `@pre_exercise_code`
@@ -218,6 +294,18 @@ plt.show()
 
 df['lifetime_value'].plot.hist()
 plt.show()
+
+def zone_change(x):
+    if x == 1:
+        return 2
+    if x == 2:
+        return 1
+    if x == 3:
+        return 4
+    if x == 4:
+        return 3
+
+df['new_zones'] = df.zone.apply(zone_change)
 ```
 `@solution`
 ```{python}
@@ -232,6 +320,18 @@ plt.show()
 
 df['lifetime_value'].plot.hist()
 plt.show()
+
+def zone_change(x):
+    if x == 1:
+        return 2
+    if x == 2:
+        return 1
+    if x == 3:
+        return 4
+    if x == 4:
+        return 3
+
+df['new_zones'] = df.zone.apply(zone_change)
 ```
 `@sct`
 ```{python}
