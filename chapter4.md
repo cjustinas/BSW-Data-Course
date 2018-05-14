@@ -172,7 +172,9 @@ lang: python
 xp: 100
 skills: 2
 ```
-Now comes the fun part! You need to initialize a Decision Tree model and pass the training data to it, so it can learn.
+Now comes the fun part! You need to initialize a Decision Tree model and pass the training data to it, so it can learn the relavant features.
+
+Note taht you are also passing the dependiant variables labels with `y_train`. This means that you are solving a `supervised learning` problem. 
 
 `@instructions`
 1) Use the `DecisionTreeClassifer` to initiate the model. Make sure to set `random_state` variable to `42` (so the results are always the same). This will be assigned to the variable `dt`
@@ -226,7 +228,9 @@ lang: python
 xp: 100
 skills: 2
 ```
-Now that you have a model ready, you need to assess how well it works.
+Now that you have a model ready, you need to assess how well it works. The `accuracy_score` function will compare your model's predictions with the actual class labels contained in `y_test` variable and return a percentage of correct guesses. 
+
+The However, remember that this only a basic test and to truly assess your model a much deeper analysis is required that is beyond the scope of this course.
 
 `@instructions`
 1) Use the `predict` method on the `x_test` variable to generate class predictions
@@ -270,7 +274,7 @@ print(accuracy_score(y_test,predictions))
 `@sct`
 ```{python}
 Ex().has_equal_ast()
-success_msg("Awesome work, your model was able to predict")
+success_msg("Awesome work! Your model predicted well, but clearly could achieve better results by better optimization.")
 ```
 
 ---
@@ -335,5 +339,5 @@ print(accuracy_score(y_test,predictions))
 `@sct`
 ```{python}
 Ex().has_equal_ast()
-success_msg("This is it! Well done for completing this journey!")
+success_msg("This is it! Well done for completing the journey!")
 ```
