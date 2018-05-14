@@ -253,7 +253,7 @@ print(df.head())
 `@sct`
 ```{python}
 Ex().has_equal_ast()
-success_msg("Good job! The new column now reflects the true state of the data!")
+success_msg("Good job! The new column reflects the true state of the data!")
 ```
 ---
 ## Bring it all together
