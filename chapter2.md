@@ -336,7 +336,7 @@ df['new_zones'] = df.zone.apply(zone_change)
 `@sct`
 ```{python}
 Ex().has_equal_ast()
-success_msg("Let's march on to the final chapter!")
+success_msg("Let's march to the next chapter!")
 ```
 
 
