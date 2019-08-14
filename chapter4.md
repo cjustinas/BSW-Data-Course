@@ -1,7 +1,8 @@
 ---
-title       : Introduction to Machine Learning
-description : This final chapter will give you a taste of the all-powerful Machine Learning. You will learn how to preprocess your data and apply a Decision Tree algorithm to predict the home planet of a given customer.  
+title: 'Introduction to Machine Learning'
+description: 'This final chapter will give you a taste of the all-powerful Machine Learning. You will learn how to preprocess your data and apply a Decision Tree algorithm to predict the home planet of a given customer.'
 ---
+
 ## Import libraries for Machine Learning
 
 ```yaml
@@ -11,19 +12,22 @@ lang: python
 xp: 100
 skills: 2
 ```
+
 Your manager approached you stating that the system used for capturing customer's home planet has gone down. However, since other variables are not affected, maybe you can build a Decision Tree that would automatically predict the customer's planet of origin?
 
 Machine Learning is a complex and difficult science that takes years to master. Luckily, there are plenty of libraries that make it easy to implement a basic model without much prior training.
 
 We will focus on the `sklearn` library that contains all the necessary functions for a Machine Learning project.
 
-
 `@instructions`
 1) Select the `tree` module from the sklearn library and import the `DecisionTreeClassifier`
 
 2) Select the `metrics` module from the `sklearn` library and import `accuracy_score`
 
-The code to import the `train_test_split` functions has already been written for you. 
+The code to import the `train_test_split` functions has already been written for you.
+
+`@hint`
+
 
 `@pre_exercise_code`
 ```{python}
@@ -62,8 +66,8 @@ Ex().has_equal_ast()
 success_msg("Now you are ready to kick things off, good work!")
 ```
 
-
 ---
+
 ## Separate the dependent variable
 
 ```yaml
@@ -73,12 +77,15 @@ lang: python
 xp: 100
 skills: 2
 ```
+
 The second task is to divide your data into two sets: one containing the dependent variable (if a person was born on Earth or Mars) that you want to predict, the other containing the features that will be used to predict the class of the dependent variable.
 
 `@instructions`
 1) Use the `drop` method on your data to delete the `home_planet` column. This will be assigned to the variable `x`
 
 2) Select the `home_planet` column only and assign it to the variable `y`
+
+`@hint`
 
 
 `@pre_exercise_code`
@@ -115,7 +122,8 @@ success_msg("Good job!")
 ```
 
 ---
-## Split your data 
+
+## Split your data
 
 ```yaml
 type: NormalExercise
@@ -124,15 +132,18 @@ lang: python
 xp: 100
 skills: 2
 ```
+
 The next step is to split your data into a training and testing sets.
 
-This means that your model will take the training features `x` and learn the outcomes of each permutation by looking at `y`. 
+This means that your model will take the training features `x` and learn the outcomes of each permutation by looking at `y`.
 
 `@instructions`
-
 1) Pass the `x` and `y` variables to the `train_test_split` function
 
 2) Set the `test_size` parameter to be `0.2`. This means that 80% of the data will be used for training and 20% for testing
+
+`@hint`
+
 
 `@pre_exercise_code`
 ```{python}
@@ -162,7 +173,9 @@ Ex().has_equal_ast()
 success_msg("Now you have data to teach and test your model!")
 
 ```
+
 ---
+
 ## Create and run a simple Decision Tree model
 
 ```yaml
@@ -172,14 +185,17 @@ lang: python
 xp: 100
 skills: 2
 ```
+
 Now comes the fun part! You need to initialize a Decision Tree model and pass the training data to it, so it can learn the relevant features.
 
-Note that you are also passing the dependent variables labels with `y_train`. This means that you are solving a `supervised learning` problem. 
+Note that you are also passing the dependent variables labels with `y_train`. This means that you are solving a `supervised learning` problem.
 
 `@instructions`
 1) Use the `DecisionTreeClassifer` to initiate the model. This will be assigned to the variable `dt`
 
 2) Use the `fit` method on `dt` and pass the training variables, so that your model can learn
+
+`@hint`
 
 
 `@pre_exercise_code`
@@ -219,6 +235,7 @@ success_msg("Great, now you have a an intelligent model!")
 ```
 
 ---
+
 ## Test your model
 
 ```yaml
@@ -228,6 +245,7 @@ lang: python
 xp: 100
 skills: 2
 ```
+
 Now that you have a model ready, you need to assess how well it works. The `accuracy_score` function will compare your model's predictions with the actual class labels contained in `y_test` variable and return a percentage of correct guesses. 
 
 The However, remember that this only a basic test and to truly assess your model a much deeper analysis is required that is beyond the scope of this course.
@@ -236,6 +254,9 @@ The However, remember that this only a basic test and to truly assess your model
 1) Use the `predict` method on the `x_test` variable to generate class predictions
 
 2) Use the `accuracy_score` function to see what is the percentage of correct predictions
+
+`@hint`
+
 
 `@pre_exercise_code`
 ```{python}
@@ -278,6 +299,7 @@ success_msg("Awesome work! Your model predicted well, but clearly could achieve 
 ```
 
 ---
+
 ## Bring it all together
 
 ```yaml
@@ -287,11 +309,13 @@ lang: python
 xp: 100
 skills: 2
 ```
-Look at you, the star analyst of Soaring Eagle Bank! You have learned about the `sklearn` library, how to separate the dependent variable, split your data into training and testing datasets, implement a Decision Tree and test the accuracy of your model. Wow, that is a lot and you have achieved all of that with just a few lines of code!
 
+Look at you, the star analyst of Soaring Eagle Bank! You have learned about the `sklearn` library, how to separate the dependent variable, split your data into training and testing datasets, implement a Decision Tree and test the accuracy of your model. Wow, that is a lot and you have achieved all of that with just a few lines of code!
 
 `@instructions`
 Click `Submit Answer` once you are ready to finish the course
+
+`@hint`
 
 
 `@pre_exercise_code`
