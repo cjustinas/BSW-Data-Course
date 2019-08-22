@@ -1,18 +1,16 @@
 ---
-title: Getting started
-description: >-
-  In this chapter you will learn how to kick off your data analysis project. This includes equipping your working environment with powerful libraries, importing the data you want to analyze and checking if the data import has been successful.
-
-
+title: 'Getting started'
+description: 'In this chapter you will learn how to kick off your data analysis project. This includes equipping your working environment with powerful libraries, importing the data you want to analyze and checking if the data import has been successful.'
 ---
+
 ## Import the required libraries
 
 ```yaml
 type: NormalExercise
+key: 286ddf980c
 lang: python
 xp: 100
 skills: 2
-key: 286ddf980c
 ```
 
 `Libraries` are collections of code that have been written by other developers and packaged for anyone to use.
@@ -30,7 +28,13 @@ Import `pandas` library and name it `pd` for ease of use.
 
 The code to import the `numpy` library has already been written for you as an example.
 
+`@hint`
 
+
+`@pre_exercise_code`
+```{python}
+
+```
 
 `@sample_code`
 ```{python}
@@ -40,29 +44,28 @@ import numpy as np
 #Import pandas library
 import ____ as ____
 ```
+
 `@solution`
 ```{python}
 import pandas as pd
 ```
+
 `@sct`
 ```{python}
 test_import("pandas", same_as = True)
 success_msg("Good job! The required libraries have been imported.")
 ```
 
-
-
-
-
 ---
+
 ## Import the data
 
 ```yaml
 type: NormalExercise
+key: 56c6ebec11
 lang: python
 xp: 100
 skills: 2
-key: 56c6ebec11
 ```
 
 Now that you have imported `pandas` library, we can focus on acquiring the data. This means pointing pandas to a data source, so it can transform it into a `DataFrame`. In very broad terms a DataFrame is simply a data structure with observations and variables (you can think of it as a spreadsheet with rows and columns).
@@ -84,34 +87,34 @@ Pandas can import data from a variety of sources that include text files, databa
 import pandas as pd
 mars_data = 'https://assets.datacamp.com/production/repositories/2588/datasets/73d9f6626d0059203da53d733f5f781c4c9aed32/mars_data.csv'
 ```
+
 `@sample_code`
 ```{python}
 #Complete the data import below
 ____ = pd.____(____)
 ```
+
 `@solution`
 ```{python}
 df = pd.read_csv(mars_data)
 ```
+
 `@sct`
 ```{python}
 test_data_frame("df", columns=['zone','product','lifetime_value','age','home_planet'])
 success_msg("Nice! Now you have a dataset to work with.")
 ```
 
-
-
-
-
 ---
+
 ## Check your data
 
 ```yaml
 type: NormalExercise
+key: 713861b8dd
 lang: python
 xp: 100
 skills: 2
-key: 713861b8dd
 ```
 
 Congratulations! You have just imported your data...
@@ -135,6 +138,7 @@ The `head()` method has been written for you as an example (it returns 5 rows of
 import pandas as pd 
 df = pd.read_csv('https://assets.datacamp.com/production/repositories/2588/datasets/e8c7de0372cfe29b1be7bad2b16e28e2e9a56d01/mars_data.csv')
 ```
+
 `@sample_code`
 ```{python}
 #Check the first 5 rows of the DataFrame (nothing will be displayed)
@@ -146,6 +150,7 @@ print(df.head())
 #Check the last 10 rows of the DataFrame
 ____(df.____(____))
 ```
+
 `@solution`
 ```{python}
 #Check the first 5 rows of the DataFrame (nothing will be displayed)
@@ -157,25 +162,23 @@ print(df.head())
 #Check the last 10 rows of the DataFrame
 print(df.tail(10))
 ```
+
 `@sct`
 ```{python}
 Ex().has_equal_ast()
 success_msg("Great! Take some time to explore the outputs.")
 ```
 
-
-
-
-
 ---
+
 ## Bring it all together
 
 ```yaml
 type: NormalExercise
+key: 689f678c19
 lang: python
 xp: 100
 skills: 2
-key: 689f678c19
 ```
 
 You have made good progress so far. Not only have you learned about the importance of libraries, but also imported the data for the upcoming analysis and checked if the import has been successful by using `tail()`. Lastly, you learned about the very common `print()` function. At this rate you will become an experienced data analyst in no time!
@@ -195,6 +198,7 @@ Click `Submit Answer` once you are ready to proceed!
 import pandas as pd 
 mars_data = 'https://assets.datacamp.com/production/repositories/2588/datasets/e8c7de0372cfe29b1be7bad2b16e28e2e9a56d01/mars_data.csv'
 ```
+
 `@sample_code`
 ```{python}
 import pandas as pd
@@ -203,6 +207,7 @@ df = pd.read_csv(mars_data)
 
 print(df.head())
 ```
+
 `@solution`
 ```{python}
 import pandas as pd
@@ -211,12 +216,9 @@ df = pd.read_csv(mars_data)
 
 print(df.head())
 ```
+
 `@sct`
 ```{python}
 Ex().has_equal_ast()
 success_msg("You have completed Chapter 1! Let's keep going.")
 ```
-
-
-
-

@@ -1,18 +1,16 @@
 ---
-title: Explore the data
-description: >-
-  Before any serious analytics can begin, it is important to understand your data better. We do this by performing Exploratory Data Analysis (EDA). A few of the available EDA methods will be covered in this chapter.
-
-
+title: 'Explore the data'
+description: 'Before any serious analytics can begin, it is important to understand your data better. We do this by performing Exploratory Data Analysis (EDA). A few of the available EDA methods will be covered in this chapter.'
 ---
+
 ## Let's get some info!
 
 ```yaml
 type: NormalExercise
+key: 5f798c6519
 lang: python
 xp: 100
 skills: 2
-key: 5f798c6519
 ```
 
 We will begin by getting some very broad information about the DataFrame `df`. For this purpose you will use the `info()` method.
@@ -30,34 +28,34 @@ Use the `info()` method on `df`
 import pandas as pd
 df = pd.read_csv('https://assets.datacamp.com/production/repositories/2588/datasets/73d9f6626d0059203da53d733f5f781c4c9aed32/mars_data.csv')
 ```
+
 `@sample_code`
 ```{python}
 #Your code below
 df.____()
 ```
+
 `@solution`
 ```{python}
 df.info()
 ```
+
 `@sct`
 ```{python}
 Ex().has_equal_ast()
 success_msg("Success! You can see that the DataFrame has 110 rows of data and 6 columns. Furthermore, you can see the column names and the variable types that populate them.")
 ```
 
-
-
-
-
 ---
+
 ## Describe the data
 
 ```yaml
 type: NormalExercise
+key: ff0ef50ee7
 lang: python
 xp: 100
 skills: 2
-key: ff0ef50ee7
 ```
 
 The `info()` method has given you some high-level insight into the dataset as a whole.
@@ -83,6 +81,7 @@ Make sure you print the variable and take some time to interpret the output.
 import pandas as pd
 df = pd.read_csv('https://assets.datacamp.com/production/repositories/2588/datasets/73d9f6626d0059203da53d733f5f781c4c9aed32/mars_data.csv')
 ```
+
 `@sample_code`
 ```{python}
 #Your code below
@@ -91,6 +90,7 @@ ____ = df.____()
 #Print the variable below
 print(____)
 ```
+
 `@solution`
 ```{python}
 #Your code below
@@ -99,25 +99,23 @@ description = df.describe()
 #Print the variable below
 print(description)
 ```
+
 `@sct`
 ```{python}
 Ex().has_equal_ast()
 success_msg("Wow, you just received a lot of useful information with a single `describe()` method!")
 ```
 
-
-
-
-
 ---
+
 ## Visualise the data
 
 ```yaml
 type: NormalExercise
+key: 0a8799887e
 lang: python
 xp: 100
 skills: 2
-key: 0a8799887e
 ```
 
 Statistical analysis is great, but sometimes a visualization can be an extremely powerful tool to understand the data quickly and effectively. For this purpose you will import a new library called `matplotlib`.
@@ -143,6 +141,7 @@ A histogram of the `age` variable has already been created for you as an example
 import pandas as pd
 df = pd.read_csv('https://assets.datacamp.com/production/repositories/2588/datasets/e8c7de0372cfe29b1be7bad2b16e28e2e9a56d01/mars_data.csv')
 ```
+
 `@sample_code`
 ```{python}
 #Import the required modules
@@ -156,6 +155,7 @@ plt.show()
 df['____'].plot.____()
 ____
 ```
+
 `@solution`
 ```{python}
 #Import the required modules
@@ -169,6 +169,7 @@ plt.show()
 df['lifetime_value'].plot.hist()
 plt.show()
 ```
+
 `@sct`
 ```{python}
 Ex().has_equal_ast()
@@ -176,6 +177,7 @@ success_msg("Great work! Note that your data is right skewed - the distribution 
 ```
 
 ---
+
 ## Write a function to fix the data
 
 ```yaml
@@ -185,6 +187,7 @@ lang: python
 xp: 100
 skills: 2
 ```
+
 Oh no! Your colleague has just informed you that an error has been spotted in the backend processes of the bank. This error has led to transaction zones being mixed up. For example, zone 1 should have been labeled as zone 2, zone 3 as 4 and so on:
 
 `Zone 1 --> 2`
@@ -192,17 +195,17 @@ Oh no! Your colleague has just informed you that an error has been spotted in th
 `Zone 3 --> 4`
 `Zone 4 --> 3`
 
-To mitigate this issue in your data you can define a function! With the right instructions, it will fix the problem quickly. 
+To mitigate this issue in your data you can define a function! With the right instructions, it will fix the problem quickly.
 
 `@instructions`
-
 1) Define a new function called `zone_change`
 
 2) Assign the correct zones
 
 3) Use the `apply` method on the `zone` column of `df` and assign the results to a new column called `new_zones`
- 
+
 `@hint`
+
 
 `@pre_exercise_code`
 ```{python}
@@ -255,25 +258,29 @@ print(df.head())
 Ex().has_equal_ast()
 success_msg("Good job! The new column now reflects the true state of the data!")
 ```
+
 ---
+
 ## Bring it all together
 
 ```yaml
 type: NormalExercise
+key: 1f72e72c18
 lang: python
 xp: 100
 skills: 2
-key: 1f72e72c18
 ```
 
 Well done! Now you have a much better understanding of the Mars Banking data. You achieved this by, firstly, having a high-level overview with the `info()` method. Then you explored the statistical features of the columns by using `describe()`. Finally, you visually examined the distribution of the values across multiple variables. 
 
 Remember, you found that both `age` and `lifetime_value` columns are right skewed. This means that you will have to transform the values of these columns to effectively apply statistical methods. You will learn more about this in the next chapter.
 
-You also engaged in some data engineering by creating a new column with transaction zone values fixed. 
+You also engaged in some data engineering by creating a new column with transaction zone values fixed.
 
 `@instructions`
 Click `Submit Answer` once you are ready to proceed!
+
+`@hint`
 
 
 `@pre_exercise_code`
@@ -281,6 +288,7 @@ Click `Submit Answer` once you are ready to proceed!
 import pandas as pd
 df = pd.read_csv('https://assets.datacamp.com/production/repositories/2588/datasets/e8c7de0372cfe29b1be7bad2b16e28e2e9a56d01/mars_data.csv')
 ```
+
 `@sample_code`
 ```{python}
 import matplotlib.pyplot as plt
@@ -307,6 +315,7 @@ def zone_change(x):
 
 df['new_zones'] = df.zone.apply(zone_change)
 ```
+
 `@solution`
 ```{python}
 import matplotlib.pyplot as plt
@@ -333,12 +342,9 @@ def zone_change(x):
 
 df['new_zones'] = df.zone.apply(zone_change)
 ```
+
 `@sct`
 ```{python}
 Ex().has_equal_ast()
 success_msg("Let's march on to the final chapter!")
 ```
-
-
-
-
